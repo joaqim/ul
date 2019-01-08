@@ -1,0 +1,30 @@
+{
+  "name": "hot-react-refetch",
+  "version": "1.0.0",
+  "license": "MIT",
+  "homepage": "https://joaqim.github.io/ul-gh-pages",
+  "scripts": {
+    "start": "webpack-dev-server --hot",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -b master -d build"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "gh-pages": "^2.0.1",
+    "html-webpack-plugin": "^2.30.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "dependencies": {
+    "css-loader": "^2.1.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-hot-loader": "next",
+    "react-refetch": "^1.0.4",
+    "style-loader": "^0.23.1"
+  }
+}
