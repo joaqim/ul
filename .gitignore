@@ -4,3 +4,5 @@ frames
 /*.webp
 /*.xcf
 /*.mp4
+/*.log
+/*.lock
