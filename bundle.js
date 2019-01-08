@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/static";
+/******/ 	__webpack_require__.p = "/static/media";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
@@ -34506,6 +34506,10 @@ var _Characters2 = _interopRequireDefault(_Characters);
 
 __webpack_require__("./src/App.css");
 
+var _back_button = __webpack_require__("./static/media/back_button.png");
+
+var _back_button2 = _interopRequireDefault(_back_button);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -34830,6 +34834,13 @@ var root = document.createElement('div');
 document.body.appendChild(root);
 
 (0, _reactDom.render)(_react2.default.createElement(_App2.default, null), root);
+
+/***/ }),
+
+/***/ "./static/media/back_button.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "7756fcf42ef23fe5f67497c6e435fd28.png";
 
 /***/ }),
 
