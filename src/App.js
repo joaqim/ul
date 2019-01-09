@@ -2,65 +2,76 @@ import React from 'react'
 import { hot } from 'react-hot-loader'
 import Characters from './Characters'
 import './App.css'
+import 'typeface-roboto'
+
+import BackIcon from './BackIcon'
+import InfoIcon from './InfoIcon'
+
+import QR from "./images/QR.png"
+import Bus from "./Bus.js"
+import BusRegional from "./BusRegional.js"
+import Train from "./Train.js"
+
 
 
 class Time extends React.Component {
-constructor(props) {
-super(props);
-this.state = {
-	currentTime: new Date()};
-}
+    constructor(props) {
+        super(props);
+        this.state = {
+	          currentTime: new Date()
+        };
+    }
 
-componentDidMount() {
-this.timerID = setInterval(() => { return this.tick() }, 1000)
-}
+    componentDidMount() {
+        this.timerID = setInterval(() => { return this.tick() }, 1000)
+    }
 
-componentWillUnmount() {
-clearInterval(this.timerID)
-}
+    componentWillUnmount() {
+        clearInterval(this.timerID)
+    }
 
-tick () {
-this.setState({
-	currentTime: new Date()
-})
-}
+    tick () {
+        this.setState({
+	          currentTime: new Date()
+        })
+    }
 
-msToTime(s) {
-  var ms = s % 1000;
-  s = (s - ms) / 1000;
-  var secs = s % 60;
-  s = (s - secs) / 60;
-  var mins = s % 60;
-  var hrs = (s - mins) / 60;
+    MSToTime(s) {
 
-  return hrs + ':' + mins + ':' + secs + '.' + ms;
-}
+        // Pad to 2 or 3 digits, default is 2
+        function pad(n, z) {
+            z = z || 2;
+            return ('00' + n).slice(-z);
+        }
 
-msToTime(s) {
-	var t = parseInt(s / 1e3 % 60, 10),
-	    n = parseInt(s / 6e4 % 60, 10),
-	    r = parseInt(s / 36e4 % 24, 10);
-	return r = r < 10 ? "0" + r : r, n = n < 10 ? "0" + n : n, t = t < 10 ? "0" + t : t, r + ":" + n + ":" + t
+        var ms = s % 1000;
+        s = (s - ms) / 1000;
+        var secs = s % 60;
+        s = (s - secs) / 60;
+        var mins = s % 60;
+        var hrs = (s - mins) / 60;
 
-}
-timeLeft() {
-var e = this.props.ticketValidityTime,
-t = this.state.currentTime.getTime() - this.props.purchased.getTime();
-return this.msToTime(e - t)
-}
+        return pad(hrs) + ':' + pad(mins) + ':' + pad(secs)
+    }
 
-render() {
-return (
-	<div className="time-info-wrapper">
-<table>
-<tbody>
-<tr><td>Tid kvar</td></tr>
-<tr><td>{this.timeLeft()}</td></tr>
-</tbody>
-</table>
-</div>
-)
-}
+    timeLeft() {
+        var e = this.props.ticketValidityTime,
+            t = this.state.currentTime.getTime() - this.props.purchased.getTime();
+        return this.MSToTime(e - t)
+    }
+
+    render() {
+        return (
+	          <div className="time-info-wrapper">
+                <table>
+                    <tbody>
+                        <tr><td>Tid kvar</td></tr>
+                        <tr><td>{this.timeLeft()}</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        )
+    }
 }
 
 class Header extends React.Component {
@@ -68,7 +79,9 @@ class Header extends React.Component {
 constructor(props) {
 	super(props)
 	this.state = {
-		purchased: new Date()
+		  purchased: new Date(),
+      /*4.5e6 = 4,500,000 (75 min) */
+      ticketValidityTime:  4.5e6
 	}
 }
 
@@ -78,43 +91,70 @@ getPurchasedDate() {
 	t = new Date;
 	var n = (new Date).setDate(Date.now() + 1e3);
 	this.setState(prevState => {
-		purchased = n;
+		  purchased = n;
 	})
+  }
 }
-}
+
+    getFormattedDate(e) {
+        return e.getFullYear() + "-" + ("0" + (e.getMonth() + 1)).slice(-2) + "-" + ("0" + e.getDate()).slice(-2) + " " + ("0" + e.getHours()).slice(-2) + ":" + ("0" + e.getMinutes()).slice(-2)
+    }
 
     render() {
         return (
-	<div>
-            {/*<div className="tram-container-wrapper"><div className="tram-wrapper"></div></div>*/}
+	          <div>
                 <div className="header-wrapper">
-                    <img src="static/media/back_button.png"/>
+                    <BackIcon/>
                     <div className="header-text">Biljett</div>
+                    <InfoIcon/>
                 </div>
-                <div className="ticket-body">
-                    <img src="/static/media/QR.png" alt="QR Code" className="QR-code"/>
-	            <hr/>
-			<Time ticketValidityTime={8e5}  purchased={this.state.purchased} />
-                    <hr/>
-                    <div className="ticket-info-wrapper"/>
-<table>
-<tbody>
-<tr>
-<td>
-<tr>Biljettyp</tr>
-<tr>1 UNGDOM</tr>
-</td>
-<td>
-<tr>Giltighet</tr>
-<tr>Zon 4+5</tr>
-</td>
-<td></td><td><tr height= "20px"></tr><tr>75 min</tr></td>
 
-</tr>
-</tbody>
-</table>
+                <div className="tram-wrapper">
+                    <Bus/>
+                     <BusRegional/> 
+                     <Train/> 
+                </div>
+                {/*<div className="tram-container-wrapper"><div className="tram-wrapper"></div></div>*/}
+                <div className="ticket-body">
+                    <img src={QR} alt="QR Code" className="QR-code"/>
+                    <br/>
+	                  <hr/>
+			              <Time ticketValidityTime={this.state.ticketValidityTime}  purchased={this.state.purchased} />
                     <hr/>
-                    <div className="random-string"/>JU2MRA27E======</div>
+                    <div className="ticket-info-wrapper">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <tr>Biljettyp</tr>
+                                        <tr>1 UNGDOM</tr>
+                                    </td>
+                                    <td>
+                                        <tr>Giltighet</tr>
+                                        <tr>Zon 4+5</tr><tr style={{display: "table-cell", paddingLeft: "2vw", fontWeigth: "600"}}>75 min</tr>
+                                    </td>
+                                    {/* <td></td><td><tr height="20px"></tr><tr style={{position: "absolute",left: "60%",top: "84.3%"}}>75 min</tr></td> */}
+                                </tr>
+                                <br/>
+                                <tr>
+                                    <td>
+                                        <tr>Pris</tr>
+                                        <tr>64 kr</tr>
+                                    </td>
+                                    <td>
+                                        <tr>Giltig t.o.m.</tr>
+                                        <tr>{/*
+                                                this.getFormattedDate(new Date(this.state.purchased.getTime() + this.state.ticketValidityTime))*/
+                                            this.getFormattedDate(new Date(this.state.purchased.getTime() + this.state.ticketValidityTime))
+                                        }</tr>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <br/>
+                    <br/>
+	              </div>
             </div>
         )
     }
