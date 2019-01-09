@@ -70,7 +70,7 @@
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".header-wrapper {\n    /* background-color: #ffd400; */\n    /* -webkit-box-shadow: 0 5px 6px 2px rgba(0, 0, 0, .1); */\n    box-shadow: 0 5px 6px 2px rgba(0, 0, 0, .1);\n    /* margin-bottom: 10px; */\n    /* text-align: center; */\n    max-height: 25px;\n    padding-bottom: 20vw;\n}\n\n.menu-wrapper {\n    box-sizing: border-box;\n    max-height: 25px;\n    max-width: 25px;\n    padding-top: 30px;\n    padding-left: 30px;\n    padding-bottom: 20px;\n    display: inline-block;\n    vertical-align: middle\n}\n\n.header-wrapper img {\n    float: left;\n    max-height: 10%;\n    max-width: 10%;\n    vertical-align: middle;\n    position: absolute;\n    top: 4vw;\n    left: 4vw;\n    background: transparent;\n}\n\n.header-text {\n    display: table;\n    /* width: 50%; */\n    width: 100%;\n    text-align: center;\n    position: absolute;\n    margin: 0 auto;\n    vertical-align: middle;\n    font-weight: 800;\n    font-size: 5vw;\n    margin-top: 1vw;\n}\n\n/* .header-text { */\n/*     font-size: 1.5em; */\n/*     display: inline-block; */\n/*     /\\* vertical-align: middle; *\\/ */\n/*     float: left; */\n/*     /\\* position: absolute; *\\/ */\n/*     /\\* margin: auto; *\\/ */\n/*     /\\* text-align: center; *\\/ */\n/*     /\\* margin-left:  20px; *\\/ */\n/*     /\\* margin-top: 5px; *\\/ */\n/*     /\\* margin-left: 18%; *\\/ */\n/*     /\\* margin-right: auto; *\\/ */\n/*     font-weight: 700; */\n/*     font-size: 1.5em; */\n/* } */\n\n.ticket-body {\n    width: 70%;\n    display: block;\n    margin: auto;\n    border-top: 20px solid #fff;\n    border-bottom: 20px solid #fff;\n    border-image-source: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAFaklEQVR4nO3bMY8d5QGF4bPBUuwGOy5wQ0MDVLgIEqWRky4NHWnhFyQtJW2K+BckNU2UJlKKxCFpIkekcAc0NDSmcAgNRgLdFPeiKEF77sz9PnuR53kkKjQz39Hq1ezeXZ/tdrtdurMj//9JOnbWxo75nvodP1hw8bMTDzJi9Bx2zLWJHUsC+dGkg4y6Pni9HXNtYseSQF6edJBRLw1eb8dcm9ixJJAfTzrIqJuD19sx1yZ2LAnkJ5MOMuqng9fbMdcmdpwt+BTr6yTPJ3kw7Ujr3UjyaZJLA/ewY57N7FjyBrmU5K1ZJzrRWxn7YiR2zLSZHUveIMm+8heSfDnjVCtdSfJJ9rWPsmPcpnYseYPkcJN3Rk90oncy54uR2DHDpnYsfYMkyVdJXktyf+RUK91Mci/JDyfe047TbW7H0jdIDjd7L8nVEw+11tXD82Z+MRI7TrXJHWsCSfa/VPldkssrr1vr8uE5o7+MOo8d62x2x9pAkuR2kj8muXbCtUtcO9z/9mO6/7fsWGbTO04JJEluJfl7kldOvP48Nw/3vTX5vuexo9v8jlMDSfZ/S/OPJO9m/5HZiCuH+9zLk/8bHTu+y46DNZ9iNQ+S3EnymySfrbjuuex/WfPLzPvocIQddvyPWYF865sk7ye5m+SDJB8neZjki+z/7v56kheTvJr994KvJ3lm4vNnseP75cJ2zA4EniojP4PAU08gUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgEiksT7/VNkveT3E3yQZKPkzxM8kWSZ5NcT/JikleT3E7yepJnJj5/Fju+Xy50x9lut9sN3uNBkl8n+W2Sz1Zc91ySt5P8IsmNwTPMYIcd37U73aPdbvfubre7stvtMvDflcN9Hg2cZYQddpzr1DfIh0l+nuT+cKH/9UqS95K8PPGex9hxPjty2rdYf03yRpLPT3ngEdeS/D7Jrcdw7/9nx3Gb37E2kLtJfpbk0doHrXA5yR+y/4HrcbFjuU3vWBPIR0leS/LvlQc7xdUk95K89Bjubcd6m92x9PcgXyV5M09mRA7PefPw3JnsOM1mdywN5FeZ+4PTEvcPz53JjtNtcseSb7EeJHkhyZcjpzrRlSSfZM7n8naM29yOJW+QO7mYETk8986ke9kxbnM7jr1Bvk7yfPa1X5QbST7N2J/F2DHPpnYce4P8JRc7Iofn/23wHnbMs6kdxwL505yzDPvz4PV2zLWZHccCedKfMJznn4PX2zHXZnYcC+SjSQcZ9eHg9XbMtZkdxwJ5OOkgo/41eL0dc21mx7FPsc4mHmbUyL9bsWO+Tez4DwUVaBJMm8/VAAAAAElFTkSuQmCC);\n    /* border-image-slice: 12.5% 25% fill; */\n    border-image-slice: 14% 25% fill;\n    border-image-repeat: round;\n    border-image-outset: 16px;\n    border-image-width: 5vw;\n    border-image-height: 5vw;\n    padding-bottom: 25px;\n    margin-bottom: 35px;\n    position: absolute;\n    top: 16vw;\n    left: 16%;\n    -webkit-transition: .6s;\n    -o-transition: .6s;\n    transition: .6s;\n    -webkit-transform-style: preserve-3d;\n    transform-style: preserve-3d;\n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n    z-index: 2;\n    -webkit-transform: rotateY(0deg);\n    transform: rotateY(0deg)\n}\n\n.ticket-body.flipped {\n    -webkit-transform: rotateY(180deg);\n    transform: rotateY(180deg)\n}\n\nimg.QR-code {\n    display: block;\n    margin: auto;\n    margin-top: 20px;\n    margin-bottom: 20px;\n    width: 60vw;\n}\n\nhr {\n    width: 85%;\n    border-color: rgba(0, 0, 0, .1)\n}\n\n.random-string {\n    text-align: center;\n    color: #b0b0b0;\n    position: relative;\n    width: 100%\n}\n\n.random-string img {\n    position: absolute;\n    width: 23px;\n    right: 10%\n}\n\n.tram-container-wrapper {\n    background-color: #ffd400;\n    margin-top: 20px;\n    width: 85%;\n    margin-left: auto;\n    margin-right: auto;\n    display: block\n}\n\n.tram-container-wrapper .logotype-wrapper {\n    width: 20%;\n    display: block;\n    margin: auto;\n    padding-top: 10px\n}\n\n.tram-container-wrapper .logotype-wrapper img {\n    max-width: 100%;\n    max-height: 100%\n}\n\n.tram-wrapper {\n    width: 100%;\n    overflow: hidden;\n    position: relative;\n    height: 25px\n}\n\n.tram-wrapper img {\n    width: 22%;\n    left: 20px;\n    position: absolute;\n    bottom: 0;\n    -webkit-animation: tram-animation alternate infinite 3.5s ease-in-out;\n    animation: tram-animation alternate infinite 3.5s ease-in-out\n}\n\n@-webkit-keyframes tram-animation {\n    0% {\n        left: -22%\n    }\n    to {\n        left: 98%\n    }\n}\n\n@keyframes tram-animation {\n    0% {\n        left: -22%\n    }\n    to {\n        left: 98%\n    }\n}\n\n.ticket-info-wrapper,\n.time-info-wrapper {\n    width: 85%;\n    display: block;\n    margin: auto;\n}\n\n\n.ticket-info-wrapper table {\n    text-align: left;\n    display: block;\n    margin: auto;\n    width: 85%;\n}\n\n.time-info-wrapper table {\n    width: 100%;\n    text-align: center;\n}\n\ntd:nth-child(1) {\n}\n\ntd:nth-child(2) tr:nth-child(2) {\n\tbackground-color: #ffc643;\ndisplay: grid;\nborder-radius: 5px;\n-moz-border-radius: 5px;\n-webkit-border-radius: 2px;\n    border: 2px solid #ffc643;\n}\n\ntr:nth-child(2) {\n    text-align: center;\n    font-weight: 600\n}\n\n.time-info-wrapper tr:nth-child(2) {\n    text-align: center;\n    font-size: 2em\n}\n\n.ticket-backside {\n    width: 80%;\n    display: block;\n    margin: auto;\n    border-top: 20px solid #fff;\n    border-bottom: 20px solid #fff;\n    border-image-source: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAFaklEQVR4nO3bMY8d5QGF4bPBUuwGOy5wQ0MDVLgIEqWRky4NHWnhFyQtJW2K+BckNU2UJlKKxCFpIkekcAc0NDSmcAgNRgLdFPeiKEF77sz9PnuR53kkKjQz39Hq1ezeXZ/tdrtdurMj//9JOnbWxo75nvodP1hw8bMTDzJi9Bx2zLWJHUsC+dGkg4y6Pni9HXNtYseSQF6edJBRLw1eb8dcm9ixJJAfTzrIqJuD19sx1yZ2LAnkJ5MOMuqng9fbMdcmdpwt+BTr6yTPJ3kw7Ujr3UjyaZJLA/ewY57N7FjyBrmU5K1ZJzrRWxn7YiR2zLSZHUveIMm+8heSfDnjVCtdSfJJ9rWPsmPcpnYseYPkcJN3Rk90oncy54uR2DHDpnYsfYMkyVdJXktyf+RUK91Mci/JDyfe047TbW7H0jdIDjd7L8nVEw+11tXD82Z+MRI7TrXJHWsCSfa/VPldkssrr1vr8uE5o7+MOo8d62x2x9pAkuR2kj8muXbCtUtcO9z/9mO6/7fsWGbTO04JJEluJfl7kldOvP48Nw/3vTX5vuexo9v8jlMDSfZ/S/OPJO9m/5HZiCuH+9zLk/8bHTu+y46DNZ9iNQ+S3EnymySfrbjuuex/WfPLzPvocIQddvyPWYF865sk7ye5m+SDJB8neZjki+z/7v56kheTvJr994KvJ3lm4vNnseP75cJ2zA4EniojP4PAU08gUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgEiksT7/VNkveT3E3yQZKPkzxM8kWSZ5NcT/JikleT3E7yepJnJj5/Fju+Xy50x9lut9sN3uNBkl8n+W2Sz1Zc91ySt5P8IsmNwTPMYIcd37U73aPdbvfubre7stvtMvDflcN9Hg2cZYQddpzr1DfIh0l+nuT+cKH/9UqS95K8PPGex9hxPjty2rdYf03yRpLPT3ngEdeS/D7Jrcdw7/9nx3Gb37E2kLtJfpbk0doHrXA5yR+y/4HrcbFjuU3vWBPIR0leS/LvlQc7xdUk95K89Bjubcd6m92x9PcgXyV5M09mRA7PefPw3JnsOM1mdywN5FeZ+4PTEvcPz53JjtNtcseSb7EeJHkhyZcjpzrRlSSfZM7n8naM29yOJW+QO7mYETk8986ke9kxbnM7jr1Bvk7yfPa1X5QbST7N2J/F2DHPpnYce4P8JRc7Iofn/23wHnbMs6kdxwL505yzDPvz4PV2zLWZHccCedKfMJznn4PX2zHXZnYcC+SjSQcZ9eHg9XbMtZkdxwJ5OOkgo/41eL0dc21mx7FPsc4mHmbUyL9bsWO+Tez4DwUVaBJMm8/VAAAAAElFTkSuQmCC);\n    border-image-slice: 12.5% 25% fill;\n    border-image-repeat: round;\n    padding: 25px;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n    margin-bottom: 35px;\n    position: absolute;\n    top: 90px;\n    left: 10%;\n    -webkit-transition: .6s;\n    -o-transition: .6s;\n    transition: .6s;\n    -webkit-transform-style: preserve-3d;\n    transform-style: preserve-3d;\n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n    -webkit-transform: rotateY(0deg);\n    transform: rotateY(0deg)\n}\n\n.ticket-backside.flipped {\n    -webkit-transform: rotateY(-180deg);\n    transform: rotateY(-180deg)\n}\n\n.info-box {\n    color: #4a8df7;\n    border: 1px solid gray;\n    padding: 15px;\n    margin-bottom: 10px;\n    text-align: center\n}\n\n.cross-icon {\n    float: right;\n    margin-top: 40px;\n    width: 20px\n}\n\nbody,\nhtml {\n    background-color: #ffc643;\n    height: 100%;\n    width: 100%;\n    background-size: cover;\n    /* background-image: url(/static/media/Background.883c8730.png); */\n    -webkit-perspective: 1000px;\n    perspective: 1000px\n}\n\n.back,\n.front {\n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n    position: absolute;\n    top: 0;\n    left: 0\n}\n\n.App {\n    position: relative\n}\n\nbody {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif\n}\n", ""]);
+exports.push([module.i, ".header-wrapper {\n    /* background-color: #ffd400; */\n    /* -webkit-box-shadow: 0 5px 6px 2px rgba(0, 0, 0, .1); */\n    /* box-shadow: 0 5px 6px 2px rgba(0, 0, 0, .1); */\n    /* margin-bottom: 10px; */\n    /* text-align: center; */\n    /* max-height: 25px; */\n    /* padding-bottom: 20vw; */\n}\n\n.header-wrapper .icon,\n.header-wrapper .back-icon,\n.header-wrapper .info-icon {\n  display: inline-block;\n  width: 1.5em;\n  height: 1.5em;\n  stroke-width: 0;\n  stroke: currentColor;\n  fill: currentColor;\n}\n\n.header-wrapper .back-icon {\n\tmargin: auto;\n\tpadding-left: 3.5vw;\n\tpadding-top: 3vw;\n}\n\n.menu-wrapper {\n    box-sizing: border-box;\n    max-height: 25px;\n    max-width: 25px;\n    padding-top: 30px;\n    padding-left: 30px;\n    padding-bottom: 20px;\n    display: inline-block;\n    vertical-align: middle\n}\n\n.header-wrapper img {\n    float: left;\n    max-height: 10%;\n    max-width: 10%;\n    vertical-align: middle;\n    position: absolute;\n    top: 4vw;\n    left: 4vw;\n    background: transparent;\n}\n\n.header-text {\n    display: table;\n    width: 100%;\n    text-align: center;\n    /* margin: 0 auto; */\n    position: absolute;\n    /* vertical-align: top; */\n    top: 2vw;\n    font-weight: 800;\n    font-size: 5vw;\n}\n\n/* .header-text { */\n/*     font-size: 1.5em; */\n/*     display: inline-block; */\n/*     /\\* vertical-align: middle; *\\/ */\n/*     float: left; */\n/*     /\\* position: absolute; *\\/ */\n/*     /\\* margin: auto; *\\/ */\n/*     /\\* text-align: center; *\\/ */\n/*     /\\* margin-left:  20px; *\\/ */\n/*     /\\* margin-top: 5px; *\\/ */\n/*     /\\* margin-left: 18%; *\\/ */\n/*     /\\* margin-right: auto; *\\/ */\n/*     font-weight: 700; */\n/*     font-size: 1.5em; */\n/* } */\n\n.ticket-body {\n    width: 70%;\n    display: block;\n    margin: auto;\n    border-top: 20px solid #fff;\n    border-bottom: 20px solid #fff;\n    border-image-source: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAFaklEQVR4nO3bMY8d5QGF4bPBUuwGOy5wQ0MDVLgIEqWRky4NHWnhFyQtJW2K+BckNU2UJlKKxCFpIkekcAc0NDSmcAgNRgLdFPeiKEF77sz9PnuR53kkKjQz39Hq1ezeXZ/tdrtdurMj//9JOnbWxo75nvodP1hw8bMTDzJi9Bx2zLWJHUsC+dGkg4y6Pni9HXNtYseSQF6edJBRLw1eb8dcm9ixJJAfTzrIqJuD19sx1yZ2LAnkJ5MOMuqng9fbMdcmdpwt+BTr6yTPJ3kw7Ujr3UjyaZJLA/ewY57N7FjyBrmU5K1ZJzrRWxn7YiR2zLSZHUveIMm+8heSfDnjVCtdSfJJ9rWPsmPcpnYseYPkcJN3Rk90oncy54uR2DHDpnYsfYMkyVdJXktyf+RUK91Mci/JDyfe047TbW7H0jdIDjd7L8nVEw+11tXD82Z+MRI7TrXJHWsCSfa/VPldkssrr1vr8uE5o7+MOo8d62x2x9pAkuR2kj8muXbCtUtcO9z/9mO6/7fsWGbTO04JJEluJfl7kldOvP48Nw/3vTX5vuexo9v8jlMDSfZ/S/OPJO9m/5HZiCuH+9zLk/8bHTu+y46DNZ9iNQ+S3EnymySfrbjuuex/WfPLzPvocIQddvyPWYF865sk7ye5m+SDJB8neZjki+z/7v56kheTvJr994KvJ3lm4vNnseP75cJ2zA4EniojP4PAU08gUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgEiksT7/VNkveT3E3yQZKPkzxM8kWSZ5NcT/JikleT3E7yepJnJj5/Fju+Xy50x9lut9sN3uNBkl8n+W2Sz1Zc91ySt5P8IsmNwTPMYIcd37U73aPdbvfubre7stvtMvDflcN9Hg2cZYQddpzr1DfIh0l+nuT+cKH/9UqS95K8PPGex9hxPjty2rdYf03yRpLPT3ngEdeS/D7Jrcdw7/9nx3Gb37E2kLtJfpbk0doHrXA5yR+y/4HrcbFjuU3vWBPIR0leS/LvlQc7xdUk95K89Bjubcd6m92x9PcgXyV5M09mRA7PefPw3JnsOM1mdywN5FeZ+4PTEvcPz53JjtNtcseSb7EeJHkhyZcjpzrRlSSfZM7n8naM29yOJW+QO7mYETk8986ke9kxbnM7jr1Bvk7yfPa1X5QbST7N2J/F2DHPpnYce4P8JRc7Iofn/23wHnbMs6kdxwL505yzDPvz4PV2zLWZHccCedKfMJznn4PX2zHXZnYcC+SjSQcZ9eHg9XbMtZkdxwJ5OOkgo/41eL0dc21mx7FPsc4mHmbUyL9bsWO+Tez4DwUVaBJMm8/VAAAAAElFTkSuQmCC);\n    /* border-image-slice: 12.5% 25% fill; */\n    border-image-slice: 14% 25% fill;\n    border-image-repeat: round;\n    border-image-outset: 16px;\n    border-image-width: 5vw;\n    border-image-height: 5vw;\n    padding-bottom: 25px;\n    margin-bottom: 35px;\n    position: absolute;\n    top: 16vw;\n    left: 16%;\n    -webkit-transition: .6s;\n    -o-transition: .6s;\n    transition: .6s;\n    -webkit-transform-style: preserve-3d;\n    transform-style: preserve-3d;\n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n    z-index: 2;\n    -webkit-transform: rotateY(0deg);\n    transform: rotateY(0deg)\n}\n\n.ticket-body.flipped {\n    -webkit-transform: rotateY(180deg);\n    transform: rotateY(180deg)\n}\n\nimg.QR-code {\n    display: block;\n    margin: auto;\n    margin-top: 20px;\n    margin-bottom: 20px;\n    width: 60vw;\n}\n\nhr {\n    width: 100%;\n    border-color: rgba(0, 0, 0, .1)\n}\n\n.random-string {\n    text-align: center;\n    color: #b0b0b0;\n    position: relative;\n    width: 100%\n}\n\n.random-string img {\n    position: absolute;\n    width: 23px;\n    right: 10%\n}\n\n.tram-container-wrapper {\n    background-color: #ffd400;\n    margin-top: 20px;\n    width: 85%;\n    margin-left: auto;\n    margin-right: auto;\n    display: block\n}\n\n.tram-container-wrapper .logotype-wrapper {\n    width: 20%;\n    display: block;\n    margin: auto;\n    padding-top: 10px\n}\n\n.tram-container-wrapper .logotype-wrapper img {\n    max-width: 100%;\n    max-height: 100%\n}\n\n.tram-wrapper {\n    width: 100%;\n    overflow: hidden;\n    position: relative;\n    height: 25px\n}\n\n.tram-wrapper img {\n    width: 22%;\n    left: 20px;\n    position: absolute;\n    bottom: 0;\n    -webkit-animation: tram-animation alternate infinite 3.5s ease-in-out;\n    animation: tram-animation alternate infinite 3.5s ease-in-out\n}\n\n@-webkit-keyframes tram-animation {\n    0% {\n        left: -22%\n    }\n    to {\n        left: 98%\n    }\n}\n\n@keyframes tram-animation {\n    0% {\n        left: -22%\n    }\n    to {\n        left: 98%\n    }\n}\n\n.ticket-info-wrapper,\n.time-info-wrapper {\n    width: 95%;\n    display: table;\n    margin: auto;\n}\n\n\n.ticket-info-wrapper table {\n    text-align: left;\n    display: contents;\n    margin: auto;\n    width: 85%;\n}\n\n.time-info-wrapper table {\n    width: 100%;\n    text-align: center;\n}\n\n.time-info-wrapper table tr:nth-child(1),\n.ticket-info-wrapper table td tr:nth-child(1) {\n\tcolor: #555555;\n\tfont-size: 1em;\n\tfont-weight: 600;\n}\n\ntr:nth-child(1) td:nth-child(2) tr:nth-child(2) {\n\tbackground-color: #ffc643;\ndisplay: inherit;\nborder-radius: 4px;\n-moz-border-radius: 4px;\n-webkit-border-radius: 4px;\npadding-left: 0.5vw;\n    border: 2px solid #ffc643;\n}\n\ntr:nth-child(2),\ntr:nth-child(3) {\n    text-align: left;\n    font-weight: 600\n}\n\n/* Second row in ticket-info-wrapper table, Pris etc */\n.ticket-info-wrapper table tr:nth-child(2) tr:nth-child(1) {\n\t/* text-align: left; */\n}\n\n/* Clock */\n.time-info-wrapper tr:nth-child(2) {\n    text-align: center;\n    font-size: 2em\n}\n\n.ticket-backside {\n    width: 80%;\n    display: block;\n    margin: auto;\n    border-top: 20px solid #fff;\n    border-bottom: 20px solid #fff;\n    border-image-source: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAFaklEQVR4nO3bMY8d5QGF4bPBUuwGOy5wQ0MDVLgIEqWRky4NHWnhFyQtJW2K+BckNU2UJlKKxCFpIkekcAc0NDSmcAgNRgLdFPeiKEF77sz9PnuR53kkKjQz39Hq1ezeXZ/tdrtdurMj//9JOnbWxo75nvodP1hw8bMTDzJi9Bx2zLWJHUsC+dGkg4y6Pni9HXNtYseSQF6edJBRLw1eb8dcm9ixJJAfTzrIqJuD19sx1yZ2LAnkJ5MOMuqng9fbMdcmdpwt+BTr6yTPJ3kw7Ujr3UjyaZJLA/ewY57N7FjyBrmU5K1ZJzrRWxn7YiR2zLSZHUveIMm+8heSfDnjVCtdSfJJ9rWPsmPcpnYseYPkcJN3Rk90oncy54uR2DHDpnYsfYMkyVdJXktyf+RUK91Mci/JDyfe047TbW7H0jdIDjd7L8nVEw+11tXD82Z+MRI7TrXJHWsCSfa/VPldkssrr1vr8uE5o7+MOo8d62x2x9pAkuR2kj8muXbCtUtcO9z/9mO6/7fsWGbTO04JJEluJfl7kldOvP48Nw/3vTX5vuexo9v8jlMDSfZ/S/OPJO9m/5HZiCuH+9zLk/8bHTu+y46DNZ9iNQ+S3EnymySfrbjuuex/WfPLzPvocIQddvyPWYF865sk7ye5m+SDJB8neZjki+z/7v56kheTvJr994KvJ3lm4vNnseP75cJ2zA4EniojP4PAU08gUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgEiksT7/VNkveT3E3yQZKPkzxM8kWSZ5NcT/JikleT3E7yepJnJj5/Fju+Xy50x9lut9sN3uNBkl8n+W2Sz1Zc91ySt5P8IsmNwTPMYIcd37U73aPdbvfubre7stvtMvDflcN9Hg2cZYQddpzr1DfIh0l+nuT+cKH/9UqS95K8PPGex9hxPjty2rdYf03yRpLPT3ngEdeS/D7Jrcdw7/9nx3Gb37E2kLtJfpbk0doHrXA5yR+y/4HrcbFjuU3vWBPIR0leS/LvlQc7xdUk95K89Bjubcd6m92x9PcgXyV5M09mRA7PefPw3JnsOM1mdywN5FeZ+4PTEvcPz53JjtNtcseSb7EeJHkhyZcjpzrRlSSfZM7n8naM29yOJW+QO7mYETk8986ke9kxbnM7jr1Bvk7yfPa1X5QbST7N2J/F2DHPpnYce4P8JRc7Iofn/23wHnbMs6kdxwL505yzDPvz4PV2zLWZHccCedKfMJznn4PX2zHXZnYcC+SjSQcZ9eHg9XbMtZkdxwJ5OOkgo/41eL0dc21mx7FPsc4mHmbUyL9bsWO+Tez4DwUVaBJMm8/VAAAAAElFTkSuQmCC);\n    border-image-slice: 12.5% 25% fill;\n    border-image-repeat: round;\n    padding: 25px;\n    -webkit-box-sizing: border-box;\n    box-sizing: border-box;\n    margin-bottom: 35px;\n    position: absolute;\n    top: 90px;\n    left: 10%;\n    -webkit-transition: .6s;\n    -o-transition: .6s;\n    transition: .6s;\n    -webkit-transform-style: preserve-3d;\n    transform-style: preserve-3d;\n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n    -webkit-transform: rotateY(0deg);\n    transform: rotateY(0deg)\n}\n\n.ticket-backside.flipped {\n    -webkit-transform: rotateY(-180deg);\n    transform: rotateY(-180deg)\n}\n\n.info-box {\n    color: #4a8df7;\n    border: 1px solid gray;\n    padding: 15px;\n    margin-bottom: 10px;\n    text-align: center\n}\n\n.cross-icon {\n    float: right;\n    margin-top: 40px;\n    width: 20px\n}\n\nbody,\nhtml {\n    background-color: #ffc643;\n    height: 100%;\n    width: 100%;\n    background-size: cover;\n    /* background-image: url(./images/Background.png); */\n    -webkit-perspective: 1000px;\n    perspective: 1000px\n}\n\n.back,\n.front {\n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n    position: absolute;\n    top: 0;\n    left: 0\n}\n\n.App {\n    position: relative\n}\n\nbody {\n    margin: 0;\n    padding: 0;\n    font-family: sans-serif\n}\n", ""]);
 
 
 
@@ -34489,7 +34489,7 @@ if(false) {
 
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -34506,9 +34506,17 @@ var _Characters2 = _interopRequireDefault(_Characters);
 
 __webpack_require__("./src/App.css");
 
+var _BackIcon = __webpack_require__("./src/BackIcon.js");
+
+var _BackIcon2 = _interopRequireDefault(_BackIcon);
+
 var _back_button = __webpack_require__("./src/images/back_button.png");
 
 var _back_button2 = _interopRequireDefault(_back_button);
+
+var _QR = __webpack_require__("./src/images/QR.png");
+
+var _QR2 = _interopRequireDefault(_QR);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
@@ -34519,255 +34527,317 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var Time = function (_React$Component) {
-  _inherits(Time, _React$Component);
+    _inherits(Time, _React$Component);
 
-  function Time(props) {
-    _classCallCheck(this, Time);
+    function Time(props) {
+        _classCallCheck(this, Time);
 
-    var _this = _possibleConstructorReturn(this, (Time.__proto__ || Object.getPrototypeOf(Time)).call(this, props));
+        var _this = _possibleConstructorReturn(this, (Time.__proto__ || Object.getPrototypeOf(Time)).call(this, props));
 
-    _this.state = {
-      currentTime: new Date() };
-    return _this;
-  }
+        _this.state = {
+            currentTime: new Date()
+        };
+        return _this;
+    }
 
-  _createClass(Time, [{
-    key: 'componentDidMount',
-    value: function componentDidMount() {
-      var _this2 = this;
+    _createClass(Time, [{
+        key: 'componentDidMount',
+        value: function componentDidMount() {
+            var _this2 = this;
 
-      this.timerID = setInterval(function () {
-        return _this2.tick();
-      }, 1000);
-    }
-  }, {
-    key: 'componentWillUnmount',
-    value: function componentWillUnmount() {
-      clearInterval(this.timerID);
-    }
-  }, {
-    key: 'tick',
-    value: function tick() {
-      this.setState({
-        currentTime: new Date()
-      });
-    }
-  }, {
-    key: 'msToTime',
-    value: function msToTime(s) {
-      var ms = s % 1000;
-      s = (s - ms) / 1000;
-      var secs = s % 60;
-      s = (s - secs) / 60;
-      var mins = s % 60;
-      var hrs = (s - mins) / 60;
+            this.timerID = setInterval(function () {
+                return _this2.tick();
+            }, 1000);
+        }
+    }, {
+        key: 'componentWillUnmount',
+        value: function componentWillUnmount() {
+            clearInterval(this.timerID);
+        }
+    }, {
+        key: 'tick',
+        value: function tick() {
+            this.setState({
+                currentTime: new Date()
+            });
+        }
+    }, {
+        key: 'MSToTime',
+        value: function MSToTime(s) {
 
-      return hrs + ':' + mins + ':' + secs + '.' + ms;
-    }
-  }, {
-    key: 'msToTime',
-    value: function msToTime(s) {
-      var t = parseInt(s / 1e3 % 60, 10),
-          n = parseInt(s / 6e4 % 60, 10),
-          r = parseInt(s / 36e4 % 24, 10);
-      return r = r < 10 ? "0" + r : r, n = n < 10 ? "0" + n : n, t = t < 10 ? "0" + t : t, r + ":" + n + ":" + t;
-    }
-  }, {
-    key: 'timeLeft',
-    value: function timeLeft() {
-      var e = this.props.ticketValidityTime,
-          t = this.state.currentTime.getTime() - this.props.purchased.getTime();
-      return this.msToTime(e - t);
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        { className: 'time-info-wrapper' },
-        _react2.default.createElement(
-          'table',
-          null,
-          _react2.default.createElement(
-            'tbody',
-            null,
-            _react2.default.createElement(
-              'tr',
-              null,
-              _react2.default.createElement(
-                'td',
-                null,
-                'Tid kvar'
-              )
-            ),
-            _react2.default.createElement(
-              'tr',
-              null,
-              _react2.default.createElement(
-                'td',
-                null,
-                this.timeLeft()
-              )
-            )
-          )
-        )
-      );
-    }
-  }]);
+            // Pad to 2 or 3 digits, default is 2
+            function pad(n, z) {
+                z = z || 2;
+                return ('00' + n).slice(-z);
+            }
 
-  return Time;
+            var ms = s % 1000;
+            s = (s - ms) / 1000;
+            var secs = s % 60;
+            s = (s - secs) / 60;
+            var mins = s % 60;
+            var hrs = (s - mins) / 60;
+
+            return pad(hrs) + ':' + pad(mins) + ':' + pad(secs);
+        }
+    }, {
+        key: 'timeLeft',
+        value: function timeLeft() {
+            var e = this.props.ticketValidityTime,
+                t = this.state.currentTime.getTime() - this.props.purchased.getTime();
+            return this.MSToTime(e - t);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
+                { className: 'time-info-wrapper' },
+                _react2.default.createElement(
+                    'table',
+                    null,
+                    _react2.default.createElement(
+                        'tbody',
+                        null,
+                        _react2.default.createElement(
+                            'tr',
+                            null,
+                            _react2.default.createElement(
+                                'td',
+                                null,
+                                'Tid kvar'
+                            )
+                        ),
+                        _react2.default.createElement(
+                            'tr',
+                            null,
+                            _react2.default.createElement(
+                                'td',
+                                null,
+                                this.timeLeft()
+                            )
+                        )
+                    )
+                )
+            );
+        }
+    }]);
+
+    return Time;
 }(_react2.default.Component);
 
 var Header = function (_React$Component2) {
-  _inherits(Header, _React$Component2);
+    _inherits(Header, _React$Component2);
 
-  function Header(props) {
-    _classCallCheck(this, Header);
+    function Header(props) {
+        _classCallCheck(this, Header);
 
-    var _this3 = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
+        var _this3 = _possibleConstructorReturn(this, (Header.__proto__ || Object.getPrototypeOf(Header)).call(this, props));
 
-    _this3.state = {
-      purchased: new Date()
-    };
-    return _this3;
-  }
-
-  _createClass(Header, [{
-    key: 'getPurchasedDate',
-    value: function getPurchasedDate() {
-      var t = this.state.purchased;
-      if (void 0 !== t && (t = t.replace(new RegExp('"', "g"), "")), t = new Date(t), isNaN(t.getTime()) || new Date().getTime() - t.getTime() > e) {
-        t = new Date();
-        var n = new Date().setDate(Date.now() + 1e3);
-        this.setState(function (prevState) {
-          purchased = n;
-        });
-      }
+        _this3.state = {
+            purchased: new Date(),
+            /*4.5e6 = 4,500,000 (75 min) */
+            ticketValidityTime: 4.5e6
+        };
+        return _this3;
     }
-  }, {
-    key: 'render',
-    value: function render() {
-      return _react2.default.createElement(
-        'div',
-        null,
-        _react2.default.createElement(
-          'div',
-          { className: 'header-wrapper' },
-          _react2.default.createElement('img', { src: 'static/media/back_button.png' }),
-          _react2.default.createElement(
-            'div',
-            { className: 'header-text' },
-            'Biljett'
-          )
-        ),
-        _react2.default.createElement(
-          'div',
-          { className: 'ticket-body' },
-          _react2.default.createElement('img', { src: '/static/media/QR.png', alt: 'QR Code', className: 'QR-code' }),
-          _react2.default.createElement('hr', null),
-          _react2.default.createElement(Time, { ticketValidityTime: 8e5, purchased: this.state.purchased }),
-          _react2.default.createElement('hr', null),
-          _react2.default.createElement('div', { className: 'ticket-info-wrapper' }),
-          _react2.default.createElement(
-            'table',
-            null,
-            _react2.default.createElement(
-              'tbody',
-              null,
-              _react2.default.createElement(
-                'tr',
+
+    _createClass(Header, [{
+        key: 'getPurchasedDate',
+        value: function getPurchasedDate() {
+            var t = this.state.purchased;
+            if (void 0 !== t && (t = t.replace(new RegExp('"', "g"), "")), t = new Date(t), isNaN(t.getTime()) || new Date().getTime() - t.getTime() > e) {
+                t = new Date();
+                var n = new Date().setDate(Date.now() + 1e3);
+                this.setState(function (prevState) {
+                    purchased = n;
+                });
+            }
+        }
+    }, {
+        key: 'getFormattedDate',
+        value: function getFormattedDate(e) {
+            return e.getFullYear() + "-" + ("0" + (e.getMonth() + 1)).slice(-2) + "-" + ("0" + e.getDate()).slice(-2) + " " + ("0" + e.getHours()).slice(-2) + ":" + ("0" + e.getMinutes()).slice(-2);
+        }
+    }, {
+        key: 'render',
+        value: function render() {
+            return _react2.default.createElement(
+                'div',
                 null,
                 _react2.default.createElement(
-                  'td',
-                  null,
-                  _react2.default.createElement(
-                    'tr',
-                    null,
-                    'Biljettyp'
-                  ),
-                  _react2.default.createElement(
-                    'tr',
-                    null,
-                    '1 UNGDOM'
-                  )
+                    'div',
+                    { className: 'header-wrapper' },
+                    _react2.default.createElement(_BackIcon2.default, null),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'header-text' },
+                        'Biljett'
+                    )
                 ),
                 _react2.default.createElement(
-                  'td',
-                  null,
-                  _react2.default.createElement(
-                    'tr',
-                    null,
-                    'Giltighet'
-                  ),
-                  _react2.default.createElement(
-                    'tr',
-                    null,
-                    'Zon 4+5'
-                  )
-                ),
-                _react2.default.createElement('td', null),
-                _react2.default.createElement(
-                  'td',
-                  null,
-                  _react2.default.createElement('tr', { height: '20px' }),
-                  _react2.default.createElement(
-                    'tr',
-                    null,
-                    '75 min'
-                  )
+                    'div',
+                    { className: 'ticket-body' },
+                    _react2.default.createElement('img', { src: _QR2.default, alt: 'QR Code', className: 'QR-code' }),
+                    _react2.default.createElement('hr', null),
+                    _react2.default.createElement(Time, { ticketValidityTime: this.state.ticketValidityTime, purchased: this.state.purchased }),
+                    _react2.default.createElement('hr', null),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'ticket-info-wrapper' },
+                        _react2.default.createElement(
+                            'table',
+                            null,
+                            _react2.default.createElement(
+                                'tbody',
+                                null,
+                                _react2.default.createElement(
+                                    'tr',
+                                    null,
+                                    _react2.default.createElement(
+                                        'td',
+                                        null,
+                                        _react2.default.createElement(
+                                            'tr',
+                                            null,
+                                            'Biljettyp'
+                                        ),
+                                        _react2.default.createElement(
+                                            'tr',
+                                            null,
+                                            '1 UNGDOM'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'td',
+                                        null,
+                                        _react2.default.createElement(
+                                            'tr',
+                                            null,
+                                            'Giltighet'
+                                        ),
+                                        _react2.default.createElement(
+                                            'tr',
+                                            null,
+                                            'Zon 4+5'
+                                        ),
+                                        _react2.default.createElement(
+                                            'tr',
+                                            { style: { display: "table-cell", paddingLeft: "2vw", fontWeigth: "600" } },
+                                            '75 min'
+                                        )
+                                    )
+                                ),
+                                _react2.default.createElement('br', null),
+                                _react2.default.createElement(
+                                    'tr',
+                                    null,
+                                    _react2.default.createElement(
+                                        'td',
+                                        null,
+                                        _react2.default.createElement(
+                                            'tr',
+                                            null,
+                                            'Pris'
+                                        ),
+                                        _react2.default.createElement(
+                                            'tr',
+                                            null,
+                                            '64 kr'
+                                        )
+                                    ),
+                                    _react2.default.createElement(
+                                        'td',
+                                        null,
+                                        _react2.default.createElement(
+                                            'tr',
+                                            null,
+                                            'Giltig t.o.m.'
+                                        ),
+                                        _react2.default.createElement(
+                                            'tr',
+                                            null,
+                                            /*
+                                               this.getFormattedDate(new Date(this.state.purchased.getTime() + this.state.ticketValidityTime))*/
+                                            this.getFormattedDate(new Date(this.state.purchased.getTime() + this.state.ticketValidityTime))
+                                        )
+                                    )
+                                )
+                            )
+                        )
+                    )
                 )
-              )
-            )
-          ),
-          _react2.default.createElement('hr', null),
-          _react2.default.createElement('div', { className: 'random-string' }),
-          'JU2MRA27E======'
-        )
-      );
-    }
-  }]);
+            );
+        }
+    }]);
 
-  return Header;
+    return Header;
 }(_react2.default.Component);
 
 var App = function App() {
-  return _react2.default.createElement(
-    'div',
-    null,
-    _react2.default.createElement(Header, null)
-  );
+    return _react2.default.createElement(
+        'div',
+        null,
+        _react2.default.createElement(Header, null)
+    );
 };
 
 {/* <div>
-     <div class="header-wrapper">
-     <div class="menu-wrapper">
-     <img src="static/media/menu.png" alt class/>
-     </div>
-     <div class="header-text">Biljett</div>
-     </div>
-     <div class="ticket-body">
-     <img src="/static/media/QR.png" alt="QR Code" class="QR-code"/>
-     <hr/>
-     <div class="time-info-wrapper">
-     <table>
-     <tbody>
-     <tr>
-     <td>Tid kvar</td>
-     </tr>
-     <tr>
-     <th>00:1:15</th>
-     </tr>
-     </tbody>
-     </table>
-     </div>
-     <hr/>
-     <div class="ticket-info-wrapper"/>
-     <hr/>
-     <div class="random-string"/>
-     </div>
-     </div> */}
+       <div class="header-wrapper">
+       <div class="menu-wrapper">
+       <img src="static/media/menu.png" alt class/>
+       </div>
+       <div class="header-text">Biljett</div>
+       </div>
+       <div class="ticket-body">
+       <img src="/static/media/QR.png" alt="QR Code" class="QR-code"/>
+       <hr/>
+       <div class="time-info-wrapper">
+       <table>
+       <tbody>
+       <tr>
+       <td>Tid kvar</td>
+       </tr>
+       <tr>
+       <th>00:1:15</th>
+       </tr>
+       </tbody>
+       </table>
+       </div>
+       <hr/>
+       <div class="ticket-info-wrapper"/>
+       <hr/>
+       <div class="random-string"/>
+       </div>
+       </div> */}
 
 exports.default = App;
+
+/***/ }),
+
+/***/ "./src/BackIcon.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+var _react = __webpack_require__("./node_modules/react/index.js");
+
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+exports.default = function () {
+  return _react2.default.createElement(
+    "svg",
+    { className: "back-icon", width: "32", height: "32", viewBox: "0 0 32 32" },
+    _react2.default.createElement("path", { d: "M12.586 27.414l-10-10c-0.781-0.781-0.781-2.047 0-2.828l10-10c0.781-0.781 2.047-0.781 2.828 0s0.781 2.047 0 2.828l-6.586 6.586h19.172c1.105 0 2 0.895 2 2s-0.895 2-2 2h-19.172l6.586 6.586c0.39 0.39 0.586 0.902 0.586 1.414s-0.195 1.024-0.586 1.414c-0.781 0.781-2.047 0.781-2.828 0z" })
+  );
+};
 
 /***/ }),
 
@@ -34812,10 +34882,17 @@ exports.default = (0, _reactRefetch.connect)(function () {
 
 /***/ }),
 
-/***/ "./src/images/back_button.png":
-/***/ (function(module, exports) {
+/***/ "./src/images/QR.png":
+/***/ (function(module, exports, __webpack_require__) {
 
-module.exports = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAACoCAMAAABt9SM9AAAAe1BMVEX+/v7t7e0AAAD////s7Oz9/f36+vr19fXv7+/39/fy8vIkJCQoKCifn5+vr6+oqKi9vb23t7ednZ2WlpbBwcGlpaXc3NzAwMBWVlZxcXHT09MVFRXW1tYgICA/Pz9MTEyDg4NoaGhgYGA2NjYYGBh8fHzKyspCQkKOjo7thp8vAAAJKElEQVR4nO1da3fcKAzFgw2GJJN3tk3bbNt0k/7/X7gzFn4wgy3bgIE56FN1jHuja0YSL0EoOQqti0ZYo1IOGgeNgVarpmWjlRU8lPBQgCZAk6BVqumFYNSEDEFKBhpvnpYAQlhpBCEDkFLA/yPKAQgxGpIuRuGMLPVFvBoSGCOTlcnKZAXHKAgFqctGGGgcNA4aA61WTUE7RJFGJGgCNAGaBK1STS8Fg9QgVSNEgiZAFaBJAqpqClr7IgONg8bhITM2TR2jIoXeGcvzzli67vDJYpySFYd3iBODZLIyWZms0BiEhA7SVMq6SCTZIKyRSjZSg8Y4aFypNTytoGltaipAE/BQf7GuzBiivvv568vvn0+CVkz6wXBphyRtZ4Tu105tDDsjhc5Y2gdpDUOUf3etPDLqBcOtHQGHO9//7AbyXcbv5YKRRZ92utzJTNaIIfRjdyqvdSbLaMhZvzrIW11HT1aQIG3garfby8hnHQoCIVOKYQBtNSGHAVRpkk00Nb7YpgUtBrszcbX7pA4xvNhBimMXK7s1jvEAeuS3aboiSGsYbG/karerqTMMP3YEGO6Y+9XRxdPYhztbk2X2V43cZbJ0Qya42t1nsjRD6D/jXKXwM9w0SI/6q6OU0c86CCW8kTmaMGjzmlaTXL1XwgGGTzu2TEr5WM4A8hB/Ukq28w73k1z9KOMf7mxG1rS/UtMOmazGEIyrG+6k914EWRhXD0lM/nUjJOUYFYhyjI3WOUYF0jpGAGkdowJRjrHRBs4X44paY/i3oyBaqJwMuXyGNvIQ4+qR2mNsYMcmSSmSM+weeSJLYcUG3uEW4yqVRVb/ZKG/QV5nshQIypVw0nsvgiy8XzkxZFuy2gB6DtIHUB0EHiLTscgYZ3dD7TE0sjzZ0ahkxuz9yZqAcYXAONEvGc6VPYbpRdd2qAULr0FaIjnDA09pA67f4c6MnCGlHV1eycJ+g0ffnskCkDlcZbIABPXt3KUh2846KJDxALpwxznG1W1VWGNMkOXMDo0sODtQyeE5g6o9Z1ANzxnISjugwLQXT84yVDNyBmsM7RCEJzv0gxZ+Zh0kGgeDJwLRzDpgOcMDD++BYhkbUjQXjcBdR0LWrDiYyTqCUIyrB+7BkFjIWnj0DPsN3jJ7jFVkWWM46Fkqo4H/5xBFMK4cYDSa6541A8P1rAN/xvxVNInAcgzVv1x1eIpw9cyj8UDhx4bIb/AYBzNZADKHq0wWgMziKpPVFLzBuNoLj4akdhwF4yq2YfGKaKgKTmn8Fm1hpELjF7RC+4ZF+w3RnEHYY4DW9pNC6yeFIzsmMM6S0vK8M87KfKsb1F8lXwTD2dgQmZNpcoa4PFAwsjB/9cx9G5IOWeh4kHs3JBmysN/gnvs3JJnjKBhXkSYCyzHsV3cEEgefxeTKi1i78qL/cX4wTld32s4I3W/5eht7QPwVk+2HgR0ptcqDoShHrT4+UUU52s8NTanWVH18pr140nQKw37dkFh6ByQX/fZ+dXV1DXIFcq2p18aHU9rypod/fPm6L5WRwcaGmL+KSr6+2BXasCQL61exyT0PRxaWX8Unx+w40KzDa2jbl8tTbbPzz2IvpviD/3GxyTc6a0+puV6GxW5liSQNccqtzW7llqzZv9yerLfQhq+RT3MFec9jQ/kS2u51UtIQZCFbGmKVpxBk8ZTy0YHc25C1drSObe6LVe6pbseKIhjLT4CyqUopEcsdm2/yCQHt1pDlSSktQ5u9Tl6CHEehn6HtXiNvMsjYMKkZh04eApFFUxzuyECzDkkOpK3Ispl1SHGKxuq84eo4evwnQRYrYpO7ajQhmlN4y24prOApzTx8LcfsmJuUrh7ugJfDNs98e/ex/LD4xet/fz2/sOAr0lgCcU/PFrbk+cKWnLOwxRYsnp1hcFlHsHyPL0hTE8bITYKFAWPWbYWzMcKSNWP53hYDNyTOIhjnNYlxtjgUcLbAODfEtgjGqtrKqxcsBk0xtm4re4yxAhULXrTGcLMBF9scsneAEX7fjaut3VgGcWArNg8Ubh98gW/szmQNQFC2Mlk9yIxDA8mTtT5IK5AuSM8+jmKB0RsS5Ean9o4ttWcQtG6bJOjtnkF4WGtNu+2FeAZxw6Q1xkETphdrh3aMYUiXRTDQmHgbUyIQvAgGtvB6S+PxQMFLFRTVjAwik9WBoIfvM1k9iJdSBZGStSBIj4DEUQTD3g4Dhrqgu6iaoxbqZu9CgKbd7E1UrC20m70LBg+7m70JXrZH2GI0GivUsQetqTM7TBg+Sm/iMTGKRGA5hvoxuvUOYk4GEdoDha7r0IEwZFfgM81kDUBQtjJZPQjOViarB1lWejMRslZHEYJFEbxAmz2Gg2i4AMPfhR9oTLzxYXpCsw56h8fyrZvjKkbKwx2nIAItg0tJJqsDwTOITFYHgrOVyepB8ILURUpk+Y4i+FUy6URDKPNA5hTB0OY0TqpOGItHNJMhApuxofYY/SyKPzvqQRGM1R2+PO/w+jQbdq3aMSaGmMpbjLHJZZAcuzQTJcuHB4ppbKgZgl4F6bz4b8Jk4ZdBZrJ6Q3C2ihTI2ipII0c5H2WxdSKwHMPxxWrjTRlWFpDaY/i2w2LdEB7O3tyDZRAf1B7Dsx2b3Mk6K4P4cfxzYx/ubEZWifit50zW0BD6NEXWeyZLM2Q6gzj8z7GTtW2QnvolvkY/6wAlIfpY22jCpHHVtI21Ey9yTZM9Bq8m5rf2wgmGNzt4v1tZ8as6o+K30Tp+VYdvvyF0+PYbqg6vvmGjdd+wxyj4OFt76QbDlx1bDXcGGHLUbz3VsQ93NierHI2JL5msc0NG2Pq0qfR4sWQRM1t7GT1ZYYK0ga23uoh81qErgrGxVOde/oXhrwWWrZPSFuMsg/g4bnyIPSktAnkH+f3HkKvXzT1Q9GPDIUZV9aVZ/irETNb4cc7q4+evL7//uy/tq3lcOlkEIvFh0FUnt9cBQFrHqECUY2w0H6OwZsuRZwx3dhBjWU1hVNuamxNNjS+yS8EIlJQmiRFmuJMoRiYrk5XJCo7hsghGDxKgQMU2RTCMK/7GrQKOdxUkiBFq1iFJjJBjw9QwxsaG8Mz32DAxDNJdjUwHICNlMU0gs8pilheC8T+vcE55iiXeRwAAAABJRU5ErkJggg=="
+module.exports = __webpack_require__.p + "images/QR.1rMVf.png";
+
+/***/ }),
+
+/***/ "./src/images/back_button.png":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "images/back_button.3hhov.png";
 
 /***/ }),
 
