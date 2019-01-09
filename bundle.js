@@ -65,12 +65,50 @@
 /************************************************************************/
 /******/ ({
 
+/***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/typeface-roboto/index.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
+// Imports
+var urlEscape = __webpack_require__("./node_modules/css-loader/dist/runtime/url-escape.js");
+var ___CSS_LOADER_URL___0___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-100.woff2"));
+var ___CSS_LOADER_URL___1___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-100.woff"));
+var ___CSS_LOADER_URL___2___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-100italic.woff2"));
+var ___CSS_LOADER_URL___3___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-100italic.woff"));
+var ___CSS_LOADER_URL___4___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-300.woff2"));
+var ___CSS_LOADER_URL___5___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-300.woff"));
+var ___CSS_LOADER_URL___6___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-300italic.woff2"));
+var ___CSS_LOADER_URL___7___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-300italic.woff"));
+var ___CSS_LOADER_URL___8___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-400.woff2"));
+var ___CSS_LOADER_URL___9___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-400.woff"));
+var ___CSS_LOADER_URL___10___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-400italic.woff2"));
+var ___CSS_LOADER_URL___11___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-400italic.woff"));
+var ___CSS_LOADER_URL___12___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-500.woff2"));
+var ___CSS_LOADER_URL___13___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-500.woff"));
+var ___CSS_LOADER_URL___14___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-500italic.woff2"));
+var ___CSS_LOADER_URL___15___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-500italic.woff"));
+var ___CSS_LOADER_URL___16___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-700.woff2"));
+var ___CSS_LOADER_URL___17___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-700.woff"));
+var ___CSS_LOADER_URL___18___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-700italic.woff2"));
+var ___CSS_LOADER_URL___19___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-700italic.woff"));
+var ___CSS_LOADER_URL___20___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-900.woff2"));
+var ___CSS_LOADER_URL___21___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-900.woff"));
+var ___CSS_LOADER_URL___22___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-900italic.woff2"));
+var ___CSS_LOADER_URL___23___ = urlEscape(__webpack_require__("./node_modules/typeface-roboto/files/roboto-latin-900italic.woff"));
+
+// Module
+exports.push([module.i, "/* roboto-100normal - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 100;\n  src:\n    local('Roboto Thin '),\n    local('Roboto-Thin'),\n    url(" + ___CSS_LOADER_URL___0___ + ") format('woff2'), \n    url(" + ___CSS_LOADER_URL___1___ + ") format('woff'); /* Modern Browsers */\n}\n\n/* roboto-100italic - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: italic;\n  font-display: swap;\n  font-weight: 100;\n  src:\n    local('Roboto Thin italic'),\n    local('Roboto-Thinitalic'),\n    url(" + ___CSS_LOADER_URL___2___ + ") format('woff2'), \n    url(" + ___CSS_LOADER_URL___3___ + ") format('woff'); /* Modern Browsers */\n}\n\n/* roboto-300normal - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 300;\n  src:\n    local('Roboto Light '),\n    local('Roboto-Light'),\n    url(" + ___CSS_LOADER_URL___4___ + ") format('woff2'), \n    url(" + ___CSS_LOADER_URL___5___ + ") format('woff'); /* Modern Browsers */\n}\n\n/* roboto-300italic - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: italic;\n  font-display: swap;\n  font-weight: 300;\n  src:\n    local('Roboto Light italic'),\n    local('Roboto-Lightitalic'),\n    url(" + ___CSS_LOADER_URL___6___ + ") format('woff2'), \n    url(" + ___CSS_LOADER_URL___7___ + ") format('woff'); /* Modern Browsers */\n}\n\n/* roboto-400normal - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 400;\n  src:\n    local('Roboto Regular '),\n    local('Roboto-Regular'),\n    url(" + ___CSS_LOADER_URL___8___ + ") format('woff2'), \n    url(" + ___CSS_LOADER_URL___9___ + ") format('woff'); /* Modern Browsers */\n}\n\n/* roboto-400italic - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: italic;\n  font-display: swap;\n  font-weight: 400;\n  src:\n    local('Roboto Regular italic'),\n    local('Roboto-Regularitalic'),\n    url(" + ___CSS_LOADER_URL___10___ + ") format('woff2'), \n    url(" + ___CSS_LOADER_URL___11___ + ") format('woff'); /* Modern Browsers */\n}\n\n/* roboto-500normal - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 500;\n  src:\n    local('Roboto Medium '),\n    local('Roboto-Medium'),\n    url(" + ___CSS_LOADER_URL___12___ + ") format('woff2'), \n    url(" + ___CSS_LOADER_URL___13___ + ") format('woff'); /* Modern Browsers */\n}\n\n/* roboto-500italic - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: italic;\n  font-display: swap;\n  font-weight: 500;\n  src:\n    local('Roboto Medium italic'),\n    local('Roboto-Mediumitalic'),\n    url(" + ___CSS_LOADER_URL___14___ + ") format('woff2'), \n    url(" + ___CSS_LOADER_URL___15___ + ") format('woff'); /* Modern Browsers */\n}\n\n/* roboto-700normal - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 700;\n  src:\n    local('Roboto Bold '),\n    local('Roboto-Bold'),\n    url(" + ___CSS_LOADER_URL___16___ + ") format('woff2'), \n    url(" + ___CSS_LOADER_URL___17___ + ") format('woff'); /* Modern Browsers */\n}\n\n/* roboto-700italic - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: italic;\n  font-display: swap;\n  font-weight: 700;\n  src:\n    local('Roboto Bold italic'),\n    local('Roboto-Bolditalic'),\n    url(" + ___CSS_LOADER_URL___18___ + ") format('woff2'), \n    url(" + ___CSS_LOADER_URL___19___ + ") format('woff'); /* Modern Browsers */\n}\n\n/* roboto-900normal - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: normal;\n  font-display: swap;\n  font-weight: 900;\n  src:\n    local('Roboto Black '),\n    local('Roboto-Black'),\n    url(" + ___CSS_LOADER_URL___20___ + ") format('woff2'), \n    url(" + ___CSS_LOADER_URL___21___ + ") format('woff'); /* Modern Browsers */\n}\n\n/* roboto-900italic - latin */\n@font-face {\n  font-family: 'Roboto';\n  font-style: italic;\n  font-display: swap;\n  font-weight: 900;\n  src:\n    local('Roboto Black italic'),\n    local('Roboto-Blackitalic'),\n    url(" + ___CSS_LOADER_URL___22___ + ") format('woff2'), \n    url(" + ___CSS_LOADER_URL___23___ + ") format('woff'); /* Modern Browsers */\n}\n\n", ""]);
+
+
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/App.css":
 /***/ (function(module, exports, __webpack_require__) {
 
 exports = module.exports = __webpack_require__("./node_modules/css-loader/dist/runtime/api.js")(false);
 // Module
-exports.push([module.i, ".header-wrapper {\n    /* background-color: #ffd400; */\n    /* -webkit-box-shadow: 0 5px 6px 2px rgba(0, 0, 0, .1); */\n    /* box-shadow: 0 5px 6px 2px rgba(0, 0, 0, .1); */\n    /* margin-bottom: 10px; */\n    /* text-align: center; */\n    /* max-height: 25px; */\n    /* padding-bottom: 20vw; */\n}\n\n.header-wrapper .icon,\n.header-wrapper .back-icon,\n.header-wrapper .info-icon {\n  display: inline-block;\n  width: 5vw;\n  height: 5vw;\n  stroke-width: 0;\n  stroke: currentColor;\n  fill: currentColor;\n}\n\n.header-wrapper .back-icon {\n\tmargin: auto;\n\tpadding-left: 4.2vw;\n\tpadding-top: 2vh;\n}\n\n.header-wrapper .info-icon {\n    position: absolute;\n    top: 0px;\n    right: 0px;\n\t  margin: auto;\n    width: 70px;\n    height: auto;\n\t  padding-right: 4.2vw;\n\t  padding-top: 2vh;\n}\n\n.menu-wrapper {\n    box-sizing: border-box;\n    max-height: 25px;\n    max-width: 25px;\n    padding-top: 30px;\n    padding-left: 30px;\n    padding-bottom: 20px;\n    display: inline-block;\n    vertical-align: middle\n}\n\n.header-wrapper img {\n    float: left;\n    max-height: 10%;\n    max-width: 10%;\n    vertical-align: middle;\n    position: absolute;\n    top: 4vw;\n    left: 4vw;\n    background: transparent;\n}\n\n.header-text {\n    display: table;\n    width: 100%;\n    text-align: center;\n    /* margin: 0 auto; */\n    position: absolute;\n    /* vertical-align: top; */\n    top: 2vw;\n    font-weight: 800;\n    font-size: 5vw;\n}\n\n/* .header-text { */\n/*     font-size: 1.5em; */\n/*     display: inline-block; */\n/*     /\\* vertical-align: middle; *\\/ */\n/*     float: left; */\n/*     /\\* position: absolute; *\\/ */\n/*     /\\* margin: auto; *\\/ */\n/*     /\\* text-align: center; *\\/ */\n/*     /\\* margin-left:  20px; *\\/ */\n/*     /\\* margin-top: 5px; *\\/ */\n/*     /\\* margin-left: 18%; *\\/ */\n/*     /\\* margin-right: auto; *\\/ */\n/*     font-weight: 700; */\n/*     font-size: 1.5em; */\n/* } */\n\n.ticket-body {\n    width: 70%;\n    display: block;\n    margin: auto;\n    border-top: 20px solid #fff;\n    border-bottom: 20px solid #fff;\n    border-image-source: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAFaklEQVR4nO3bMY8d5QGF4bPBUuwGOy5wQ0MDVLgIEqWRky4NHWnhFyQtJW2K+BckNU2UJlKKxCFpIkekcAc0NDSmcAgNRgLdFPeiKEF77sz9PnuR53kkKjQz39Hq1ezeXZ/tdrtdurMj//9JOnbWxo75nvodP1hw8bMTDzJi9Bx2zLWJHUsC+dGkg4y6Pni9HXNtYseSQF6edJBRLw1eb8dcm9ixJJAfTzrIqJuD19sx1yZ2LAnkJ5MOMuqng9fbMdcmdpwt+BTr6yTPJ3kw7Ujr3UjyaZJLA/ewY57N7FjyBrmU5K1ZJzrRWxn7YiR2zLSZHUveIMm+8heSfDnjVCtdSfJJ9rWPsmPcpnYseYPkcJN3Rk90oncy54uR2DHDpnYsfYMkyVdJXktyf+RUK91Mci/JDyfe047TbW7H0jdIDjd7L8nVEw+11tXD82Z+MRI7TrXJHWsCSfa/VPldkssrr1vr8uE5o7+MOo8d62x2x9pAkuR2kj8muXbCtUtcO9z/9mO6/7fsWGbTO04JJEluJfl7kldOvP48Nw/3vTX5vuexo9v8jlMDSfZ/S/OPJO9m/5HZiCuH+9zLk/8bHTu+y46DNZ9iNQ+S3EnymySfrbjuuex/WfPLzPvocIQddvyPWYF865sk7ye5m+SDJB8neZjki+z/7v56kheTvJr994KvJ3lm4vNnseP75cJ2zA4EniojP4PAU08gUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgEiksT7/VNkveT3E3yQZKPkzxM8kWSZ5NcT/JikleT3E7yepJnJj5/Fju+Xy50x9lut9sN3uNBkl8n+W2Sz1Zc91ySt5P8IsmNwTPMYIcd37U73aPdbvfubre7stvtMvDflcN9Hg2cZYQddpzr1DfIh0l+nuT+cKH/9UqS95K8PPGex9hxPjty2rdYf03yRpLPT3ngEdeS/D7Jrcdw7/9nx3Gb37E2kLtJfpbk0doHrXA5yR+y/4HrcbFjuU3vWBPIR0leS/LvlQc7xdUk95K89Bjubcd6m92x9PcgXyV5M09mRA7PefPw3JnsOM1mdywN5FeZ+4PTEvcPz53JjtNtcseSb7EeJHkhyZcjpzrRlSSfZM7n8naM29yOJW+QO7mYETk8986ke9kxbnM7jr1Bvk7yfPa1X5QbST7N2J/F2DHPpnYce4P8JRc7Iofn/23wHnbMs6kdxwL505yzDPvz4PV2zLWZHccCedKfMJznn4PX2zHXZnYcC+SjSQcZ9eHg9XbMtZkdxwJ5OOkgo/41eL0dc21mx7FPsc4mHmbUyL9bsWO+Tez4DwUVaBJMm8/VAAAAAElFTkSuQmCC);\n    /* border-image-slice: 12.5% 25% fill; */\n    border-image-slice: 14% 25% fill;\n    border-image-repeat: round;\n    border-image-outset: 16px;\n    border-image-width: 5vw;\n    border-image-height: 5vw;\n    padding-bottom: 25px;\n    margin-bottom: 35px;\n    position: absolute;\n    top: 16vw;\n    left: 16%;\n    -webkit-transition: .6s;\n    -o-transition: .6s;\n    transition: .6s;\n    -webkit-transform-style: preserve-3d;\n    transform-style: preserve-3d;\n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n    z-index: 2;\n    -webkit-transform: rotateY(0deg);\n    transform: rotateY(0deg)\n}\n\n.ticket-body.flipped {\n    -webkit-transform: rotateY(180deg);\n    transform: rotateY(180deg)\n}\n\nimg.QR-code {\n    display: block;\n    margin: auto;\n    margin-top: 20px;\n    margin-bottom: 20px;\n    width: 60vw;\n}\n\nhr {\n    width: 100%;\n    border-color: rgba(0, 0, 0, .1)\n}\n\n.random-string {\n    text-align: center;\n    color: #b0b0b0;\n    position: relative;\n    width: 100%\n}\n\n.random-string img {\n    position: absolute;\n    width: 23px;\n    right: 10%\n}\n\n.bus ,\n.train,\n.bus-regional {\n    position: absolute;\n    overflow: hidden;\n    overflow-x: hidden;\n    overflow-y: hidden;\n}\n\n.bus {\n    top: 15%;\n    -webkit-animation: bus-animation  infinite 4.0s linear;\n    animation: bus-animation  infinite 4.0s linear;\n}\n\n.bus-regional {\n    top: 0%;\n    left: -80%;\n    animation: bus-regional-animation  infinite 4.0s linear;\n}\n\n.train {\n    bottom: -60%;\n    left: -150%;\n    animation: train-animation  infinite 4.0s linear;\n}\n\n@-webkit-keyframes bus-animation {\n    0% {left: 100%}\n    50% {left: 122%}\n    to {left: -122%}\n}\n\n@keyframes bus-animation {\n    0% {left: 100%}\n    40% {left: 122%}\n    to {left: -122%}\n}\n\n@keyframes train-animation {\n    0% {transform: translate(0%, 0%)}\n    30% {transform: translate(0%, 0%)}\n    to {transform: translate(300vw, -150vw)}\n}\n\n@keyframes bus-regional-animation {\n    0% {}\n    30% {transform: translate(-1vw, -1vw)}\n    to {transform: translate(180vw, 120vw)}\n}\n\n.tram-container-wrapper {\n    position: relative;\n    overflow: hidden;\n    /* position: absolute; */\n    /* top: 0; */\n    /* left: 0; */\n    z-index: -100;\n}\n\n/* .tram-container-wrapper { */\n/*     background-color: #ffd400; */\n/*     margin-top: 20px; */\n/*     width: 85%; */\n/*     margin-left: auto; */\n/*     margin-right: auto; */\n/*     display: block */\n/* } */\n\n/* .tram-container-wrapper .logotype-wrapper { */\n/*     width: 20%; */\n\n/*     margin: auto; */\n/*     padding-top: 10px */\n/* } */\n\n/* .tram-container-wrapper .logotype-wrapper img { */\n/*     max-width: 100%; */\n/*     max-height: 100% */\n/* } */\n\n.tram-wrapper {\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 100%;\n    padding:0;\n    margin:0;\n\n    top:0;\n    left:0;\n\n    width: 100%;\n    height: 100%;\n    overflow: hidden;\n    position: fixed;\n}\n\n/* .tram-wrapper img { */\n/*     width: 22%; */\n/*     left: 20px; */\n/*     position: absolute; */\n/*     bottom: 0; */\n/*     -webkit-animation: tram-animation alternate infinite 3.5s ease-in-out; */\n/*     animation: tram-animation alternate infinite 3.5s ease-in-out */\n/* } */\n\n/* @-webkit-keyframes tram-animation { */\n/*     0% { */\n/*         left: -22% */\n/*     } */\n/*     to { */\n/*         left: 98% */\n/*     } */\n/* } */\n\n/* @keyframes tram-animation { */\n/*     0% { */\n/*         left: -22% */\n/*     } */\n/*     to { */\n/*         left: 98% */\n/*     } */\n/* } */\n\n.ticket-info-wrapper,\n.time-info-wrapper {\n    width: 95%;\n    display: table;\n    margin: auto;\n}\n\n\n    .ticket-info-wrapper table {\n        text-align: left;\n        display: contents;\n        margin: auto;\n        width: 85%;\n        font-size: 4.0vw;\n        /* font-weight: 800; */\n    }\n\n    .time-info-wrapper table {\n        width: 100%;\n        text-align: center;\n    }\n\n    .time-info-wrapper table tr:nth-child(1),\n    .ticket-info-wrapper table td tr:nth-child(1) {\n        color: #555555;\n        font-size: 3.5vw;\n        font-weight: 500;\n    }\n\n    .ticket-info-wrapper table\n    tr:nth-child(1) td:nth-child(2) tr:nth-child(2) {\n        background-color: #ffc643;\n        display: inherit;\n        border-radius: 4px;\n        -moz-border-radius: 4px;\n        -webkit-border-radius: 4px;\n        padding-left: 0.5vw;\n        border: 2px solid #ffc643;\n    }\n\n    tr:nth-child(2),\n    tr:nth-child(3) {\n        text-align: left;\n        font-weight: 600\n    }\n\n    /* Second row in ticket-info-wrapper table, Pris etc */\n    .ticket-info-wrapper table tr:nth-child(2) tr:nth-child(1) {\n        /* text-align: left; */\n    }\n\n    /* Clock */\n    .time-info-wrapper tr:nth-child(2) {\n        text-align: center;\n        font-size: 7vw\n    }\n\n .ticket-backside {\n     width: 80%;\n     display: block;\n     margin: auto;\n     border-top: 20px solid #fff;\n     border-bottom: 20px solid #fff;\n     border-image-source: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAFaklEQVR4nO3bMY8d5QGF4bPBUuwGOy5wQ0MDVLgIEqWRky4NHWnhFyQtJW2K+BckNU2UJlKKxCFpIkekcAc0NDSmcAgNRgLdFPeiKEF77sz9PnuR53kkKjQz39Hq1ezeXZ/tdrtdurMj//9JOnbWxo75nvodP1hw8bMTDzJi9Bx2zLWJHUsC+dGkg4y6Pni9HXNtYseSQF6edJBRLw1eb8dcm9ixJJAfTzrIqJuD19sx1yZ2LAnkJ5MOMuqng9fbMdcmdpwt+BTr6yTPJ3kw7Ujr3UjyaZJLA/ewY57N7FjyBrmU5K1ZJzrRWxn7YiR2zLSZHUveIMm+8heSfDnjVCtdSfJJ9rWPsmPcpnYseYPkcJN3Rk90oncy54uR2DHDpnYsfYMkyVdJXktyf+RUK91Mci/JDyfe047TbW7H0jdIDjd7L8nVEw+11tXD82Z+MRI7TrXJHWsCSfa/VPldkssrr1vr8uE5o7+MOo8d62x2x9pAkuR2kj8muXbCtUtcO9z/9mO6/7fsWGbTO04JJEluJfl7kldOvP48Nw/3vTX5vuexo9v8jlMDSfZ/S/OPJO9m/5HZiCuH+9zLk/8bHTu+y46DNZ9iNQ+S3EnymySfrbjuuex/WfPLzPvocIQddvyPWYF865sk7ye5m+SDJB8neZjki+z/7v56kheTvJr994KvJ3lm4vNnseP75cJ2zA4EniojP4PAU08gUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgEiksT7/VNkveT3E3yQZKPkzxM8kWSZ5NcT/JikleT3E7yepJnJj5/Fju+Xy50x9lut9sN3uNBkl8n+W2Sz1Zc91ySt5P8IsmNwTPMYIcd37U73aPdbvfubre7stvtMvDflcN9Hg2cZYQddpzr1DfIh0l+nuT+cKH/9UqS95K8PPGex9hxPjty2rdYf03yRpLPT3ngEdeS/D7Jrcdw7/9nx3Gb37E2kLtJfpbk0doHrXA5yR+y/4HrcbFjuU3vWBPIR0leS/LvlQc7xdUk95K89Bjubcd6m92x9PcgXyV5M09mRA7PefPw3JnsOM1mdywN5FeZ+4PTEvcPz53JjtNtcseSb7EeJHkhyZcjpzrRlSSfZM7n8naM29yOJW+QO7mYETk8986ke9kxbnM7jr1Bvk7yfPa1X5QbST7N2J/F2DHPpnYce4P8JRc7Iofn/23wHnbMs6kdxwL505yzDPvz4PV2zLWZHccCedKfMJznn4PX2zHXZnYcC+SjSQcZ9eHg9XbMtZkdxwJ5OOkgo/41eL0dc21mx7FPsc4mHmbUyL9bsWO+Tez4DwUVaBJMm8/VAAAAAElFTkSuQmCC);\n     border-image-slice: 12.5% 25% fill;\n     border-image-repeat: round;\n     padding: 25px;\n     -webkit-box-sizing: border-box;\n     box-sizing: border-box;\n     margin-bottom: 35px;\n     position: absolute;\n     top: 90px;\n     left: 10%;\n     -webkit-transition: .6s;\n     -o-transition: .6s;\n     transition: .6s;\n     -webkit-transform-style: preserve-3d;\n     transform-style: preserve-3d;\n     -webkit-backface-visibility: hidden;\n     backface-visibility: hidden;\n     -webkit-transform: rotateY(0deg);\n     transform: rotateY(0deg)\n }\n\n .ticket-backside.flipped {\n     -webkit-transform: rotateY(-180deg);\n     transform: rotateY(-180deg)\n }\n\n .info-box {\n     color: #4a8df7;\n     border: 1px solid gray;\n     padding: 15px;\n     margin-bottom: 10px;\n     text-align: center\n }\n\n .cross-icon {\n     float: right;\n     margin-top: 40px;\n     width: 20px\n }\n\n body,\n html {\n     background-color: #ffc643;\n     height: 100%;\n     width: 100%;\n     background-size: cover;\n     /* background-image: url(./images/Background.png); */\n     -webkit-perspective: 1000px;\n     perspective: 1000px\n }\n\n .back,\n .front {\n     -webkit-backface-visibility: hidden;\n     backface-visibility: hidden;\n     position: absolute;\n     top: 0;\n     left: 0\n }\n\n .App {\n     position: relative\n }\n\n body {\n     margin: 0;\n     padding: 0;\n     font-family: sans-serif;\n     overflow: hidden;\n     overflow-x: hidden;\n }\n", ""]);
+exports.push([module.i, ".header-wrapper {\n    background-color: #ffd200;\n    /* -webkit-box-shadow: 0 5px 6px 2px rgba(0, 0, 0, .1); */\n    /* box-shadow: 0 5px 6px 2px rgba(0, 0, 0, .1); */\n    margin-bottom: 10px;\n    /* text-align: center; */\n    /* max-height: 25px; */\n    padding-bottom: 1.8vh;\n    position: fixed;\n    width: 100%;\n    top: 0;\n    overflow: hidden;\n}\n\n.header-wrapper .icon,\n.header-wrapper .back-icon,\n.header-wrapper .info-icon {\n  display: inline-block;\n  width: 5vw;\n  height: 5vw;\n  stroke-width: 0;\n  stroke: currentColor;\n  fill: currentColor;\n}\n\n.header-wrapper .back-icon {\n\tmargin: auto;\n\tpadding-left: 4.2vw;\n\tpadding-top: 1.8vh;\n}\n\n.header-wrapper .info-icon {\n    position: absolute;\n    top: 0px;\n    right: 0px;\n\t  margin: auto;\n    width: 4vh;\n    height: auto;\n\t  padding-right: 3.2vw;\n\t  padding-top: 2.5vw;\n}\n\n.menu-wrapper {\n    box-sizing: border-box;\n    max-height: 25px;\n    max-width: 25px;\n    padding-top: 30px;\n    padding-left: 30px;\n    padding-bottom: 20px;\n    display: inline-block;\n    vertical-align: middle\n}\n\n.header-wrapper img {\n    float: left;\n    max-height: 10%;\n    max-width: 10%;\n    vertical-align: middle;\n    position: absolute;\n    top: 4vw;\n    left: 4vw;\n    background: transparent;\n}\n\n.header-text {\n    display: table;\n    width: 100%;\n    text-align: center;\n    /* margin: 0 auto; */\n    position: absolute;\n    /* vertical-align: top; */\n    top: 1.5vh;\n    font-weight: 800;\n    font-size: 5vw;\n}\n\n/* .header-text { */\n/*     font-size: 1.5em; */\n/*     display: inline-block; */\n/*     /\\* vertical-align: middle; *\\/ */\n/*     float: left; */\n/*     /\\* position: absolute; *\\/ */\n/*     /\\* margin: auto; *\\/ */\n/*     /\\* text-align: center; *\\/ */\n/*     /\\* margin-left:  20px; *\\/ */\n/*     /\\* margin-top: 5px; *\\/ */\n/*     /\\* margin-left: 18%; *\\/ */\n/*     /\\* margin-right: auto; *\\/ */\n/*     font-weight: 700; */\n/*     font-size: 1.5em; */\n/* } */\n\n.ticket-body {\n    width: 75%;\n    display: block;\n    margin: auto;\n    border-top: 2vh solid #fff;\n    border-bottom: 20px solid #fff;\n    border-image-source: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAFaklEQVR4nO3bMY8d5QGF4bPBUuwGOy5wQ0MDVLgIEqWRky4NHWnhFyQtJW2K+BckNU2UJlKKxCFpIkekcAc0NDSmcAgNRgLdFPeiKEF77sz9PnuR53kkKjQz39Hq1ezeXZ/tdrtdurMj//9JOnbWxo75nvodP1hw8bMTDzJi9Bx2zLWJHUsC+dGkg4y6Pni9HXNtYseSQF6edJBRLw1eb8dcm9ixJJAfTzrIqJuD19sx1yZ2LAnkJ5MOMuqng9fbMdcmdpwt+BTr6yTPJ3kw7Ujr3UjyaZJLA/ewY57N7FjyBrmU5K1ZJzrRWxn7YiR2zLSZHUveIMm+8heSfDnjVCtdSfJJ9rWPsmPcpnYseYPkcJN3Rk90oncy54uR2DHDpnYsfYMkyVdJXktyf+RUK91Mci/JDyfe047TbW7H0jdIDjd7L8nVEw+11tXD82Z+MRI7TrXJHWsCSfa/VPldkssrr1vr8uE5o7+MOo8d62x2x9pAkuR2kj8muXbCtUtcO9z/9mO6/7fsWGbTO04JJEluJfl7kldOvP48Nw/3vTX5vuexo9v8jlMDSfZ/S/OPJO9m/5HZiCuH+9zLk/8bHTu+y46DNZ9iNQ+S3EnymySfrbjuuex/WfPLzPvocIQddvyPWYF865sk7ye5m+SDJB8neZjki+z/7v56kheTvJr994KvJ3lm4vNnseP75cJ2zA4EniojP4PAU08gUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgEiksT7/VNkveT3E3yQZKPkzxM8kWSZ5NcT/JikleT3E7yepJnJj5/Fju+Xy50x9lut9sN3uNBkl8n+W2Sz1Zc91ySt5P8IsmNwTPMYIcd37U73aPdbvfubre7stvtMvDflcN9Hg2cZYQddpzr1DfIh0l+nuT+cKH/9UqS95K8PPGex9hxPjty2rdYf03yRpLPT3ngEdeS/D7Jrcdw7/9nx3Gb37E2kLtJfpbk0doHrXA5yR+y/4HrcbFjuU3vWBPIR0leS/LvlQc7xdUk95K89Bjubcd6m92x9PcgXyV5M09mRA7PefPw3JnsOM1mdywN5FeZ+4PTEvcPz53JjtNtcseSb7EeJHkhyZcjpzrRlSSfZM7n8naM29yOJW+QO7mYETk8986ke9kxbnM7jr1Bvk7yfPa1X5QbST7N2J/F2DHPpnYce4P8JRc7Iofn/23wHnbMs6kdxwL505yzDPvz4PV2zLWZHccCedKfMJznn4PX2zHXZnYcC+SjSQcZ9eHg9XbMtZkdxwJ5OOkgo/41eL0dc21mx7FPsc4mHmbUyL9bsWO+Tez4DwUVaBJMm8/VAAAAAElFTkSuQmCC);\n    /* border-image-slice: 12.5% 25% fill; */\n    border-image-slice: 14% 25% fill;\n    border-image-repeat: round;\n    border-image-outset: 16px;\n    border-image-width: 5vw;\n    border-image-height: 5vw;\n    padding-bottom: 25px;\n    margin-bottom: 35px;\n    position: absolute;\n    top: 18vw;\n    left: 12%;\n    -webkit-transition: .6s;\n    -o-transition: .6s;\n    transition: .6s;\n    -webkit-transform-style: preserve-3d;\n    transform-style: preserve-3d;\n    -webkit-backface-visibility: hidden;\n    backface-visibility: hidden;\n    z-index: 2;\n    -webkit-transform: rotateY(0deg);\n    transform: rotateY(0deg)\n}\n\n.ticket-body.flipped {\n    -webkit-transform: rotateY(180deg);\n    transform: rotateY(180deg)\n}\n\nimg.QR-code {\n    display: block;\n    margin: auto;\n    margin-top: 20px;\n    margin-bottom: 20px;\n    width: 60vw;\n}\n\nhr {\n    width: 100%;\n    border-color: rgba(0, 0, 0, .1)\n}\n\n.random-string {\n    text-align: center;\n    color: #b0b0b0;\n    position: relative;\n    width: 100%\n}\n\n.random-string img {\n    position: absolute;\n    width: 23px;\n    right: 10%\n}\n\n.bus ,\n.train,\n.bus-regional {\n    position: absolute;\n    overflow: hidden;\n    overflow-x: hidden;\n    overflow-y: hidden;\n}\n\n.bus {\n    top: 15%;\n    -webkit-animation: bus-animation  infinite 4.0s linear;\n    animation: bus-animation  infinite 4.0s linear;\n}\n\n.bus-regional {\n    top: -10%;\n    left: -100%;\n    animation: bus-regional-animation  infinite 4.0s linear;\n}\n\n.train {\n    bottom: -60%;\n    left: -150%;\n    animation: train-animation  infinite 4.0s linear;\n}\n\n@-webkit-keyframes bus-animation {\n    0% {left: 100%}\n    50% {left: 122%}\n    to {left: -122%}\n}\n\n@keyframes bus-animation {\n    0% {left: 100%}\n    40% {left: 122%}\n    to {left: -122%}\n}\n\n@keyframes train-animation {\n    0% {transform: translate(0%, 0%)}\n    30% {transform: translate(0%, 0%)}\n    to {transform: translate(300vw, -150vw)}\n}\n\n@keyframes bus-regional-animation {\n    0% {}\n    30% {transform: translate(-1vw, -1vw)}\n    to {transform: translate(220vw, 140vw)}\n}\n\n.tram-container-wrapper {\n    position: relative;\n    overflow: hidden;\n    /* position: absolute; */\n    /* top: 0; */\n    /* left: 0; */\n    z-index: -100;\n}\n\n/* .tram-container-wrapper { */\n/*     background-color: #ffd400; */\n/*     margin-top: 20px; */\n/*     width: 85%; */\n/*     margin-left: auto; */\n/*     margin-right: auto; */\n/*     display: block */\n/* } */\n\n/* .tram-container-wrapper .logotype-wrapper { */\n/*     width: 20%; */\n\n/*     margin: auto; */\n/*     padding-top: 10px */\n/* } */\n\n/* .tram-container-wrapper .logotype-wrapper img { */\n/*     max-width: 100%; */\n/*     max-height: 100% */\n/* } */\n\n.tram-wrapper {\n    top: 0;\n    left: 0;\n    width: 100%;\n    height: 140vh;\n    padding: 0;\n    margin: auto;\n    z-index: -100;\n\n    overflow: hidden;\n    position: fixed;\n}\n\n/* .tram-wrapper img { */\n/*     width: 22%; */\n/*     left: 20px; */\n/*     position: absolute; */\n/*     bottom: 0; */\n/*     -webkit-animation: tram-animation alternate infinite 3.5s ease-in-out; */\n/*     animation: tram-animation alternate infinite 3.5s ease-in-out */\n/* } */\n\n/* @-webkit-keyframes tram-animation { */\n/*     0% { */\n/*         left: -22% */\n/*     } */\n/*     to { */\n/*         left: 98% */\n/*     } */\n/* } */\n\n/* @keyframes tram-animation { */\n/*     0% { */\n/*         left: -22% */\n/*     } */\n/*     to { */\n/*         left: 98% */\n/*     } */\n/* } */\n\n.ticket-info-wrapper,\n.time-info-wrapper {\n    width: 95%;\n    display: table;\n    margin: auto;\n}\n\n\n    .ticket-info-wrapper table {\n        text-align: left;\n        display: contents;\n        margin: auto;\n        width: 85%;\n        font-size: 4.0vw;\n        /* font-weight: 800; */\n    }\n\n    .time-info-wrapper table {\n        width: 100%;\n        text-align: center;\n    }\n\n    .time-info-wrapper table tr:nth-child(1),\n    .ticket-info-wrapper table td tr:nth-child(1) {\n        color: #555555;\n        font-size: 3.5vw;\n        font-weight: 500;\n    }\n\n    .ticket-info-wrapper table\n    tr:nth-child(1) td:nth-child(2) tr:nth-child(2) {\n        background-color: #ffd200;\n        display: inherit;\n        border-radius: 4px;\n        -moz-border-radius: 4px;\n        -webkit-border-radius: 4px;\n        padding-left: 0.5vw;\n        border: 2px solid #ffd200;\n    }\n\n    tr:nth-child(2),\n    tr:nth-child(3) {\n        text-align: left;\n        font-weight: 600\n    }\n\n    /* Second row in ticket-info-wrapper table, Pris etc */\n    .ticket-info-wrapper table tr:nth-child(2) tr:nth-child(1) {\n        /* text-align: left; */\n    }\n\n    /* Clock */\n    .time-info-wrapper tr:nth-child(2) {\n        text-align: center;\n        font-size: 7vw\n    }\n\n .ticket-backside {\n     width: 80%;\n     display: block;\n     margin: auto;\n     border-top: 20px solid #fff;\n     border-bottom: 20px solid #fff;\n     border-image-source: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADICAYAAACtWK6eAAAFaklEQVR4nO3bMY8d5QGF4bPBUuwGOy5wQ0MDVLgIEqWRky4NHWnhFyQtJW2K+BckNU2UJlKKxCFpIkekcAc0NDSmcAgNRgLdFPeiKEF77sz9PnuR53kkKjQz39Hq1ezeXZ/tdrtdurMj//9JOnbWxo75nvodP1hw8bMTDzJi9Bx2zLWJHUsC+dGkg4y6Pni9HXNtYseSQF6edJBRLw1eb8dcm9ixJJAfTzrIqJuD19sx1yZ2LAnkJ5MOMuqng9fbMdcmdpwt+BTr6yTPJ3kw7Ujr3UjyaZJLA/ewY57N7FjyBrmU5K1ZJzrRWxn7YiR2zLSZHUveIMm+8heSfDnjVCtdSfJJ9rWPsmPcpnYseYPkcJN3Rk90oncy54uR2DHDpnYsfYMkyVdJXktyf+RUK91Mci/JDyfe047TbW7H0jdIDjd7L8nVEw+11tXD82Z+MRI7TrXJHWsCSfa/VPldkssrr1vr8uE5o7+MOo8d62x2x9pAkuR2kj8muXbCtUtcO9z/9mO6/7fsWGbTO04JJEluJfl7kldOvP48Nw/3vTX5vuexo9v8jlMDSfZ/S/OPJO9m/5HZiCuH+9zLk/8bHTu+y46DNZ9iNQ+S3EnymySfrbjuuex/WfPLzPvocIQddvyPWYF865sk7ye5m+SDJB8neZjki+z/7v56kheTvJr994KvJ3lm4vNnseP75cJ2zA4EniojP4PAU08gUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgECoFAIRAoBAKFQKAQCBQCgUIgUAgEiksT7/VNkveT3E3yQZKPkzxM8kWSZ5NcT/JikleT3E7yepJnJj5/Fju+Xy50x9lut9sN3uNBkl8n+W2Sz1Zc91ySt5P8IsmNwTPMYIcd37U73aPdbvfubre7stvtMvDflcN9Hg2cZYQddpzr1DfIh0l+nuT+cKH/9UqS95K8PPGex9hxPjty2rdYf03yRpLPT3ngEdeS/D7Jrcdw7/9nx3Gb37E2kLtJfpbk0doHrXA5yR+y/4HrcbFjuU3vWBPIR0leS/LvlQc7xdUk95K89Bjubcd6m92x9PcgXyV5M09mRA7PefPw3JnsOM1mdywN5FeZ+4PTEvcPz53JjtNtcseSb7EeJHkhyZcjpzrRlSSfZM7n8naM29yOJW+QO7mYETk8986ke9kxbnM7jr1Bvk7yfPa1X5QbST7N2J/F2DHPpnYce4P8JRc7Iofn/23wHnbMs6kdxwL505yzDPvz4PV2zLWZHccCedKfMJznn4PX2zHXZnYcC+SjSQcZ9eHg9XbMtZkdxwJ5OOkgo/41eL0dc21mx7FPsc4mHmbUyL9bsWO+Tez4DwUVaBJMm8/VAAAAAElFTkSuQmCC);\n     border-image-slice: 12.5% 25% fill;\n     border-image-repeat: round;\n     padding: 25px;\n     -webkit-box-sizing: border-box;\n     box-sizing: border-box;\n     margin-bottom: 35px;\n     position: absolute;\n     top: 90px;\n     left: 10%;\n     -webkit-transition: .6s;\n     -o-transition: .6s;\n     transition: .6s;\n     -webkit-transform-style: preserve-3d;\n     transform-style: preserve-3d;\n     -webkit-backface-visibility: hidden;\n     backface-visibility: hidden;\n     -webkit-transform: rotateY(0deg);\n     transform: rotateY(0deg)\n }\n\n .ticket-backside.flipped {\n     -webkit-transform: rotateY(-180deg);\n     transform: rotateY(-180deg)\n }\n\n .info-box {\n     color: #4a8df7;\n     border: 1px solid gray;\n     padding: 15px;\n     margin-bottom: 10px;\n     text-align: center\n }\n\n .cross-icon {\n     float: right;\n     margin-top: 40px;\n     width: 20px\n }\n\n body,\n html {\n     background-color: #ffd200;\n     height: 100%;\n     width: 100%;\n     background-size: cover;\n     /* background-image: url(./images/Background.png); */\n     -webkit-perspective: 1000px;\n     perspective: 1000px\n }\n\n .back,\n .front {\n     -webkit-backface-visibility: hidden;\n     backface-visibility: hidden;\n     position: absolute;\n     top: 0;\n     left: 0\n }\n\n .App {\n     position: relative\n }\n\n  @font-face {\n      font-family: 'roboto'\n  }\n  body {\n      margin: 0;\n      padding: 0;\n      font-family: roboto;\n      /* overflow: hidden; */\n      overflow-x: hidden;\n  }\n", ""]);
 
 
 
@@ -165,6 +203,33 @@ function toComment(sourceMap) {
   var data = 'sourceMappingURL=data:application/json;charset=utf-8;base64,' + base64;
   return '/*# ' + data + ' */';
 }
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/url-escape.js":
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+module.exports = function escape(url, needQuotes) {
+  if (typeof url !== 'string') {
+    return url;
+  } // If url is already wrapped in quotes, remove them
+
+
+  if (/^['"].*['"]$/.test(url)) {
+    url = url.slice(1, -1);
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]/.test(url) || needQuotes) {
+    return '"' + url.replace(/"/g, '\\"').replace(/\n/g, '\\n') + '"';
+  }
+
+  return url;
+};
 
 /***/ }),
 
@@ -34305,6 +34370,225 @@ module.exports = function (css) {
 
 /***/ }),
 
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-100.woff":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-100.woff";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-100.woff2":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-100.woff2";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-100italic.woff":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-100italic.woff";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-100italic.woff2":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-100italic.woff2";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-300.woff":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-300.woff";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-300.woff2":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-300.woff2";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-300italic.woff":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-300italic.woff";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-300italic.woff2":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-300italic.woff2";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-400.woff":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-400.woff";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-400.woff2":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-400.woff2";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-400italic.woff":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-400italic.woff";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-400italic.woff2":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-400italic.woff2";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-500.woff":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-500.woff";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-500.woff2":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-500.woff2";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-500italic.woff":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-500italic.woff";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-500italic.woff2":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-500italic.woff2";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-700.woff":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-700.woff";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-700.woff2":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-700.woff2";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-700italic.woff":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-700italic.woff";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-700italic.woff2":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-700italic.woff2";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-900.woff":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-900.woff";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-900.woff2":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-900.woff2";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-900italic.woff":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-900italic.woff";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/files/roboto-latin-900italic.woff2":
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__.p + "roboto-latin-900italic.woff2";
+
+/***/ }),
+
+/***/ "./node_modules/typeface-roboto/index.css":
+/***/ (function(module, exports, __webpack_require__) {
+
+
+var content = __webpack_require__("./node_modules/css-loader/dist/cjs.js!./node_modules/typeface-roboto/index.css");
+
+if(typeof content === 'string') content = [[module.i, content, '']];
+
+var transform;
+var insertInto;
+
+
+
+var options = {"hmr":true}
+
+options.transform = transform
+options.insertInto = undefined;
+
+var update = __webpack_require__("./node_modules/style-loader/lib/addStyles.js")(content, options);
+
+if(content.locals) module.exports = content.locals;
+
+if(false) {
+	module.hot.accept("!!../css-loader/dist/cjs.js!./index.css", function() {
+		var newContent = require("!!../css-loader/dist/cjs.js!./index.css");
+
+		if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+
+		var locals = (function(a, b) {
+			var key, idx = 0;
+
+			for(key in a) {
+				if(!b || a[key] !== b[key]) return false;
+				idx++;
+			}
+
+			for(key in b) idx--;
+
+			return idx === 0;
+		}(content.locals, newContent.locals));
+
+		if(!locals) throw new Error('Aborting CSS HMR due to changed css-modules locals.');
+
+		update(newContent);
+	});
+
+	module.hot.dispose(function() { update(); });
+}
+
+/***/ }),
+
 /***/ "./node_modules/warning/browser.js":
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -34505,6 +34789,8 @@ var _Characters = __webpack_require__("./src/Characters.js");
 var _Characters2 = _interopRequireDefault(_Characters);
 
 __webpack_require__("./src/App.css");
+
+__webpack_require__("./node_modules/typeface-roboto/index.css");
 
 var _BackIcon = __webpack_require__("./src/BackIcon.js");
 
@@ -34786,7 +35072,9 @@ var Header = function (_React$Component2) {
                                 )
                             )
                         )
-                    )
+                    ),
+                    _react2.default.createElement('br', null),
+                    _react2.default.createElement('br', null)
                 )
             );
         }
