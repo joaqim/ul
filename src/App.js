@@ -12,7 +12,17 @@ import Bus from "./Bus.js"
 import BusRegional from "./BusRegional.js"
 import Train from "./Train.js"
 
+import bwip from 'bwip-js'
 
+String.random = function (length) {
+	let radom13chars = function () {
+		return Math.random().toString(16).substring(2, 15)
+	}
+	let loops = Math.ceil(length / 13)
+	return new Array(loops).fill(radom13chars).reduce((string, func) => {
+		return string + func()
+	}, '').substring(0, length)
+}
 
 class Time extends React.Component {
     constructor(props) {
@@ -24,6 +34,7 @@ class Time extends React.Component {
 
     componentDidMount() {
         this.timerID = setInterval(() => { return this.tick() }, 1000)
+
     }
 
     componentWillUnmount() {
@@ -79,6 +90,7 @@ class Header extends React.Component {
 constructor(props) {
 	super(props)
 	this.state = {
+		rndBytes: String.random(320),
 		  purchased: new Date(),
       /*4.5e6 = 4,500,000 (75 min) */
       ticketValidityTime:  4.5e6
@@ -100,6 +112,24 @@ getPurchasedDate() {
         return e.getFullYear() + "-" + ("0" + (e.getMonth() + 1)).slice(-2) + "-" + ("0" + e.getDate()).slice(-2) + " " + ("0" + e.getHours()).slice(-2) + ":" + ("0" + e.getMinutes()).slice(-2)
     }
 
+    componentDidMount() {
+	bwip('mycanvas', {
+            bcid:        'azteccode',       // Barcode type
+      text:        String.random(450),    // Text to encode
+      scale:       3,               // 3x scaling factor
+      /* height:      10,              // Bar height, in millimeters */
+      includetext: false,            // Show human-readable text
+            textxalign:  'center',        // Always good to set this
+        }, function (err, cvs) {
+            if (err) {
+                // Decide how to handle the error
+                // `err` may be a string or Error object
+		console.log(err)
+            } else {
+                // Nothing else to do in this example...
+            }
+        });
+	}
     render() {
         return (
 	          <div>
@@ -116,7 +146,8 @@ getPurchasedDate() {
                 </div>
                 {/*<div className="tram-container-wrapper"><div className="tram-wrapper"></div></div>*/}
                 <div className="ticket-body">
-                    <img src={QR} alt="QR Code" className="QR-code"/>
+                    {/* <img src={QR} alt="QR Code" className="QR-code"/> */}
+	                  <canvas className="QR-code" id="mycanvas"></canvas>
                     <br/>
 	                  <hr/>
 			              <Time ticketValidityTime={this.state.ticketValidityTime}  purchased={this.state.purchased} />

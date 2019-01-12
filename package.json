@@ -5,7 +5,7 @@
   "author": "Joaqim Planstedt",
   "homepage": "https://joaqim.github.io/ul-gh-pages",
   "scripts": {
-    "start": "webpack-dev-server --hot",
+    "start": "webpack-dev-server --disable-host-check --inline --content-base dist/ --port 8080 --host 0.0.0.0 --hot --open",
     "build": "npm run clean && npm run compile",
     "clean": "rm -rf ./dist/index.bundle.js",
     "compile": "NODE_ENV=production webpack --config ./webpack.config.babel.js --progress",
@@ -28,7 +28,9 @@
     "webpack-dev-server": "^2.9.7"
   },
   "dependencies": {
+    "bwip-js": "^1.7.1",
     "css-loader": "^2.1.0",
+    "random-bytes": "^1.0.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-hot-loader": "next",
