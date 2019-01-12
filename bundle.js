@@ -68276,7 +68276,7 @@ var App = function App() {
         _react2.default.createElement(
             _reactRouterDom.BrowserRouter,
             null,
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/mnd',
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/ul/*',
                 render: function render(props) {
                     return _react2.default.createElement(Header, {
                         ticketValidityTime: 2.592e9,
