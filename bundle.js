@@ -356,7 +356,7 @@ function loadfonts(callback) {
 		(function(fontpath, font) {
 			var xhr = new XMLHttpRequest;
 			var root = (typeof process == 'object' && typeof process.env == 'object' &&
-						process.env.PUBLIC_URL) || '';
+						undefined) || '';
 			xhr.open('GET', root + '/bwipjs-fonts/' + fontpath, true);
 			xhr.responseType = 'arraybuffer';
 			xhr.onload = function(e) {
@@ -67870,7 +67870,7 @@ if(false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(process) {
+
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68260,7 +68260,7 @@ var App = function App() {
         null,
         _react2.default.createElement(
             _reactRouterDom.BrowserRouter,
-            { basename: process.env.PUBLIC_URL },
+            { basename: undefined + "/" },
             _react2.default.createElement(
                 _reactRouterDom.Switch,
                 null,
@@ -68275,7 +68275,7 @@ var App = function App() {
                         });
                     }
                 }),
-                console.log(process.env.PUBLIC_URL),
+                console.log(undefined),
                 _react2.default.createElement(_reactRouterDom.Route, { path: '/m',
                     render: function render(props) {
                         return _react2.default.createElement(Header, {
@@ -68322,7 +68322,6 @@ var App = function App() {
        </div> */}
 
 exports.default = App;
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/process/browser.js")))
 
 /***/ }),
 
