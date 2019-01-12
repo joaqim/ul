@@ -356,7 +356,7 @@ function loadfonts(callback) {
 		(function(fontpath, font) {
 			var xhr = new XMLHttpRequest;
 			var root = (typeof process == 'object' && typeof process.env == 'object' &&
-						undefined) || '';
+						process.env.PUBLIC_URL) || '';
 			xhr.open('GET', root + '/bwipjs-fonts/' + fontpath, true);
 			xhr.responseType = 'arraybuffer';
 			xhr.onload = function(e) {
@@ -67870,7 +67870,7 @@ if(false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(process) {
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68260,11 +68260,11 @@ var App = function App() {
         null,
         _react2.default.createElement(
             _reactRouterDom.BrowserRouter,
-            { basename: undefined + "/" },
+            { basename: process.env.PUBLIC_URL },
             _react2.default.createElement(
                 _reactRouterDom.Switch,
                 null,
-                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/',
+                _react2.default.createElement(_reactRouterDom.Route, { path: '/u',
                     render: function render(props) {
                         return _react2.default.createElement(Header, {
                             ticketValidityTime: 4.5e6,
@@ -68275,8 +68275,8 @@ var App = function App() {
                         });
                     }
                 }),
-                console.log(undefined),
-                _react2.default.createElement(_reactRouterDom.Route, { path: '/m',
+                console.log(process.env.PUBLIC_URL),
+                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/m',
                     render: function render(props) {
                         return _react2.default.createElement(Header, {
                             ticketValidityTime: 2.592e9,
@@ -68322,6 +68322,7 @@ var App = function App() {
        </div> */}
 
 exports.default = App;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/process/browser.js")))
 
 /***/ }),
 
