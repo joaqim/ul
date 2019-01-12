@@ -68260,34 +68260,34 @@ var App = function App() {
         null,
         _react2.default.createElement(
             _reactRouterDom.BrowserRouter,
-            null,
-            _react2.default.createElement(_reactRouterDom.Route, { path: process.env.PUBLIC_URL + '/',
-                render: function render(props) {
-                    return _react2.default.createElement(Header, {
-                        ticketValidityTime: 4.5e6,
-                        zone: "Zon 4+5",
-                        ticketType: "1 VUXEN",
-                        ticketPrice: 64,
-                        isAuthed: true
-                    });
-                }
-            })
-        ),
-        console.log(process.env.PUBLIC_URL),
-        _react2.default.createElement(
-            _reactRouterDom.BrowserRouter,
-            null,
-            _react2.default.createElement(_reactRouterDom.Route, { path: process.env.PUBLIC_URL + 'lm',
-                render: function render(props) {
-                    return _react2.default.createElement(Header, {
-                        ticketValidityTime: 2.592e9,
-                        zone: "Alla zoner",
-                        ticketType: "1 VUXEN",
-                        ticketPrice: 880,
-                        isAuthed: true
-                    });
-                }
-            })
+            { basename: process.env.PUBLIC_URL },
+            _react2.default.createElement(
+                _reactRouterDom.Switch,
+                null,
+                _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/',
+                    render: function render(props) {
+                        return _react2.default.createElement(Header, {
+                            ticketValidityTime: 4.5e6,
+                            zone: "Zon 4+5",
+                            ticketType: "1 VUXEN",
+                            ticketPrice: 64,
+                            isAuthed: true
+                        });
+                    }
+                }),
+                console.log(process.env.PUBLIC_URL),
+                _react2.default.createElement(_reactRouterDom.Route, { path: '/m',
+                    render: function render(props) {
+                        return _react2.default.createElement(Header, {
+                            ticketValidityTime: 2.592e9,
+                            zone: "Alla zoner",
+                            ticketType: "1 VUXEN",
+                            ticketPrice: 880,
+                            isAuthed: true
+                        });
+                    }
+                })
+            )
         )
     );
 };
