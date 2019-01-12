@@ -1,6 +1,6 @@
 .header-wrapper {
-    background-color: #ffd200;
-    background-color: #efc703;
+    /* background-color: #ffd200; */
+    /* background-color: #efc703; */
     /* -webkit-box-shadow: 0 5px 6px 2px rgba(0, 0, 0, .1); */
     /* box-shadow: 0 5px 6px 2px rgba(0, 0, 0, .1); */
     margin-bottom: 10px;
@@ -382,7 +382,7 @@ hr {
  body,
  html {
      background-color: #ffd200;
-     background-color: #efc703;
+     /* background-color: #efc703; */
      height: 100%;
      width: 100%;
      background-size: cover;
