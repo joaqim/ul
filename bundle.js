@@ -68261,7 +68261,7 @@ var App = function App() {
         _react2.default.createElement(
             _reactRouterDom.BrowserRouter,
             null,
-            _react2.default.createElement(_reactRouterDom.Route, { path: process.env.PUBLIC_URL + '/',
+            _react2.default.createElement(_reactRouterDom.Route, { path: process.env.PUBLIC_URL,
                 render: function render(props) {
                     return _react2.default.createElement(Header, {
                         ticketValidityTime: 4.5e6,
