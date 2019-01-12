@@ -57,7 +57,7 @@
 /******/ 	__webpack_require__.o = function(object, property) { return Object.prototype.hasOwnProperty.call(object, property); };
 /******/
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "/ul/";
+/******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(__webpack_require__.s = 0);
@@ -67870,7 +67870,7 @@ if(false) {
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-
+/* WEBPACK VAR INJECTION */(function(process) {
 
 Object.defineProperty(exports, "__esModule", {
     value: true
@@ -68261,7 +68261,7 @@ var App = function App() {
         _react2.default.createElement(
             _reactRouterDom.BrowserRouter,
             null,
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/ul',
+            _react2.default.createElement(_reactRouterDom.Route, { path: process.env.PUBLIC_URL + '/ul',
                 render: function render(props) {
                     return _react2.default.createElement(Header, {
                         ticketValidityTime: 4.5e6,
@@ -68276,7 +68276,7 @@ var App = function App() {
         _react2.default.createElement(
             _reactRouterDom.BrowserRouter,
             null,
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/ul/*',
+            _react2.default.createElement(_reactRouterDom.Route, { path: process.env.PUBLIC_URL + '/ul-m*',
                 render: function render(props) {
                     return _react2.default.createElement(Header, {
                         ticketValidityTime: 2.592e9,
@@ -68321,6 +68321,7 @@ var App = function App() {
        </div> */}
 
 exports.default = App;
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__("./node_modules/process/browser.js")))
 
 /***/ }),
 
