@@ -126,7 +126,7 @@
     transform: rotateY(180deg)
 }
 
-img.QR-code {
+.QR-code {
     display: block;
     margin: auto;
     margin-top: 20px;
