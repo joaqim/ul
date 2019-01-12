@@ -4,6 +4,9 @@ import Characters from './Characters'
 import './App.css'
 import 'typeface-roboto'
 
+import { BrowserRouter, Router, Switch, Route, Link } from 'react-router-dom';
+
+
 import BackIcon from './BackIcon'
 import InfoIcon from './InfoIcon'
 
@@ -13,22 +16,63 @@ import BusRegional from "./BusRegional.js"
 import Train from "./Train.js"
 
 import bwip from 'bwip-js'
-
-String.random = function (length) {
-	let radom13chars = function () {
-		return Math.random().toString(16).substring(2, 15)
-	}
-	let loops = Math.ceil(length / 13)
-	return new Array(loops).fill(radom13chars).reduce((string, func) => {
-		return string + func()
-	}, '').substring(0, length)
+class TestComponent extends React.Component {
+    constructor(props) {
+        super(props);
+        this.routeParam = props.match.params.option;
+    }
 }
 
+String.random = function (length) {
+	  let radom13chars = function () {
+		    return Math.random().toString(16).substring(2, 15)
+	  }
+	  let loops = Math.ceil(length / 13)
+	  return new Array(loops).fill(radom13chars).reduce((string, func) => {
+		    return string + func()
+	  }, '').substring(0, length)
+}
+function MSToMinOrDays(s) {
+    // Pad to 2 or 3 digits, default is 2
+    function pad(n, z) {
+        z = z || 2;
+        return ('00' + n).slice(-z);
+    }
+
+    var ms = s % 1000;
+    s = (s - ms) / 1000;
+    var secs = s % 60;
+    s = (s - secs) / 60;
+    var mins = s % 60;
+    var hrs = (s - mins) / 60;
+    var day = hrs >= 999999999 ? Math.floor((hrs + 24)/24) : Math.round(hrs / 24);
+    return day ? day + " dagar" : pad(hrs * 60 + mins) + " min"
+
+}
+
+function MSToTime(s) {
+
+    // Pad to 2 or 3 digits, default is 2
+    function pad(n, z) {
+        z = z || 2;
+        return ('00' + n).slice(-z);
+    }
+
+    var ms = s % 1000;
+    s = (s - ms) / 1000;
+    var secs = s % 60;
+    s = (s - secs) / 60;
+    var mins = s % 60;
+    var hrs = (s - mins) / 60;
+    var day = hrs >= 999999999 ? Math.floor((hrs + 24)/24) : Math.round(hrs / 24);
+return day ? day + " dagar" : pad(hrs) + ':' + pad(mins) + ':' + pad(secs)
+
+}
 class Time extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-	          currentTime: new Date()
+	          currentTime: new Date(),
         };
     }
 
@@ -47,28 +91,10 @@ class Time extends React.Component {
         })
     }
 
-    MSToTime(s) {
-
-        // Pad to 2 or 3 digits, default is 2
-        function pad(n, z) {
-            z = z || 2;
-            return ('00' + n).slice(-z);
-        }
-
-        var ms = s % 1000;
-        s = (s - ms) / 1000;
-        var secs = s % 60;
-        s = (s - secs) / 60;
-        var mins = s % 60;
-        var hrs = (s - mins) / 60;
-
-        return pad(hrs) + ':' + pad(mins) + ':' + pad(secs)
-    }
-
     timeLeft() {
         var e = this.props.ticketValidityTime,
             t = this.state.currentTime.getTime() - this.props.purchased.getTime();
-        return this.MSToTime(e - t)
+        return MSToTime(e - t)
     }
 
     render() {
@@ -91,10 +117,8 @@ constructor(props) {
 	super(props)
 	this.state = {
 		rndBytes: String.random(320),
-		  purchased: new Date(),
-      /*4.5e6 = 4,500,000 (75 min) */
-      ticketValidityTime:  4.5e6
-	}
+		  purchased: new Date()
+     	}
 }
 
 getPurchasedDate() {
@@ -113,23 +137,23 @@ getPurchasedDate() {
     }
 
     componentDidMount() {
-	bwip('mycanvas', {
+	      bwip('mycanvas', {
             bcid:        'azteccode',       // Barcode type
-      text:        String.random(450),    // Text to encode
-      scale:       3,               // 3x scaling factor
-      /* height:      10,              // Bar height, in millimeters */
-      includetext: false,            // Show human-readable text
+            text:        String.random(450),    // Text to encode
+            scale:       3,               // 3x scaling factor
+            /* height:      10,              // Bar height, in millimeters */
+            includetext: false,            // Show human-readable text
             textxalign:  'center',        // Always good to set this
         }, function (err, cvs) {
             if (err) {
                 // Decide how to handle the error
                 // `err` may be a string or Error object
-		console.log(err)
+		            console.log(err)
             } else {
                 // Nothing else to do in this example...
             }
         });
-	}
+	  }
     render() {
         return (
 	          <div>
@@ -138,11 +162,15 @@ getPurchasedDate() {
                     <div className="header-text">Biljett</div>
                     <InfoIcon/>
                 </div>
-
+                {/* <Switch>
+                    {// <Route exact path="/" component={List} /> }
+                    <Route path="/:option" component={TestComponent} />
+                 </Switch>
+                 */}
                 <div className="tram-wrapper">
                     <Bus/>
-                     <BusRegional/> 
-                     <Train/> 
+                    <BusRegional/> 
+                    <Train/> 
                 </div>
                 {/*<div className="tram-container-wrapper"><div className="tram-wrapper"></div></div>*/}
                 <div className="ticket-body">
@@ -150,7 +178,7 @@ getPurchasedDate() {
 	                  <canvas className="QR-code" id="mycanvas"></canvas>
                     <br/>
 	                  <hr/>
-			              <Time ticketValidityTime={this.state.ticketValidityTime}  purchased={this.state.purchased} />
+			              <Time ticketValidityTime={this.props.ticketValidityTime}  purchased={this.state.purchased} />
                     <hr/>
                     <div className="ticket-info-wrapper">
                         <table>
@@ -158,43 +186,80 @@ getPurchasedDate() {
                                 <tr>
                                     <td>
                                         <tr>Biljettyp</tr>
-                                        <tr>1 UNGDOM</tr>
+                                        <tr>{this.props.ticketType}</tr>
                                     </td>
                                     <td>
-                                        <tr>Giltighet</tr>
-                                        <tr>Zon 4+5</tr><tr style={{display: "table-cell", paddingLeft: "2vw", fontWeigth: "600"}}>75 min</tr>
+                                                <tr>Giltighet</tr>
+                                                <tr>{this.props.zone}</tr><tr style={{display: "table-cell", paddingLeft: "2vw", fontWeigth: "600"}}>{MSToMinOrDays(this.props.ticketValidityTime)}</tr>
                                     </td>
-                                    {/* <td></td><td><tr height="20px"></tr><tr style={{position: "absolute",left: "60%",top: "84.3%"}}>75 min</tr></td> */}
-                                </tr>
-                                <br/>
-                                <tr>
-                                    <td>
-                                        <tr>Pris</tr>
-                                        <tr>64 kr</tr>
-                                    </td>
-                                    <td>
-                                        <tr>Giltig t.o.m.</tr>
-                                        <tr>{/*
-                                                this.getFormattedDate(new Date(this.state.purchased.getTime() + this.state.ticketValidityTime))*/
-                                            this.getFormattedDate(new Date(this.state.purchased.getTime() + this.state.ticketValidityTime))
-                                        }</tr>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <br/>
-                    <br/>
-	              </div>
+                                            {/* <td></td><td><tr height="20px"></tr><tr style={{position: "absolute",left: "60%",top: "84.3%"}}>75 min</tr></td> */}
+                                        </tr>
+                                        <br/>
+                                        <tr>
+                                            <td>
+                                                <tr>Pris</tr>
+                                                <tr>{this.props.ticketPrice} kr</tr>
+                                            </td>
+                                            <td>
+                                                <tr>Giltig t.o.m.</tr>
+                                                <tr>{/*
+                                                        this.getFormattedDate(new Date(this.state.purchased.getTime() + this.state.ticketValidityTime))*/
+                                                    this.getFormattedDate(new Date(this.state.purchased.getTime() + this.props.ticketValidityTime))
+                                                }</tr>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <br/>
+                            <br/>
+	                      </div>
             </div>
         )
     }
 }
 
+/*4.5e6 = 4,500,000 (75 min) */
+/* ticketValidityTime:  2.592e9, // 30 dagar  */
+/* zone: "Alla zoner", */
+/* ticketPrice: 880 */
 
 const App = () => (
     <div>
-        <Header/>
+        <BrowserRouter basename={process.env.PUBLIC_URL}>
+            <Switch>
+                <Route  path='/ul'
+                        render={(props) =>
+                            <Header
+                                ticketValidityTime={4.5e6}
+                                                   zone={"Zon 4+5"}
+                                                   ticketType={"1 VUXEN"}
+                                                   ticketPrice={64}
+                                                   isAuthed={true}
+                            />}
+                />
+    {console.log(process.env.PUBLIC_URL)}
+                <Route exact path='/manad'
+                       render={(props) =>
+                           <Header
+                               ticketValidityTime={2.592e9}
+                                                  zone={"Alla zoner"}
+                                                  ticketType={"1 VUXEN"}
+                                                  ticketPrice={880}
+                                                  isAuthed={true}
+                           />}
+    />
+            </Switch>
+        </BrowserRouter>
+
+
+        {/* <Header
+            ticketType={9001}
+            ticketValidityTime={4.5e6}
+            zone={"Zon 4+5"}
+            ticketType={"1 VUXEN"}
+            ticketPrice={64}
+            /> */}
     </div>
 )
 

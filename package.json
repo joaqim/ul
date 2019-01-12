@@ -1,9 +1,9 @@
 {
   "name": "ul",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "license": "MIT",
   "author": "Joaqim Planstedt",
-  "homepage": "https://joaqim.github.io/ul-gh-pages",
+  "homepage": "https://joaqim.xyz",
   "scripts": {
     "start": "webpack-dev-server --disable-host-check --inline --content-base dist/ --port 8080 --host 0.0.0.0 --hot --open",
     "build": "npm run clean && npm run compile",
@@ -35,6 +35,7 @@
     "react-dom": "^16.2.0",
     "react-hot-loader": "next",
     "react-refetch": "^1.0.4",
+    "react-router-dom": "^4.3.1",
     "style-loader": "^0.23.1"
   }
 }

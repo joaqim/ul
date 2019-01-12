@@ -8,6 +8,7 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/'
   },
   module: {
     rules: [
@@ -64,5 +65,8 @@ pngquant: {
 }
     ],
   },
-  plugins: [new HtmlWebpackPlugin(), new webpack.NamedModulesPlugin()],
+ devServer: {
+    historyApiFallback: true,
+  },
+  plugins: [new HtmlWebpackPlugin(), new webpack.NamedModulesPlugin()]
 }
