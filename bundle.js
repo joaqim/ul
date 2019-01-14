@@ -64124,7 +64124,7 @@ var Header = function (_React$Component2) {
                                         _react2.default.createElement(
                                             'tr',
                                             null,
-                                            '1 UNGDOM'
+                                            '1 VUXEN'
                                         )
                                     ),
                                     _react2.default.createElement(
